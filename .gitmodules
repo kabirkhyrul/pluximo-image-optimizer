@@ -1,0 +1,12 @@
+[submodule "modules/ecosystem"]
+	path = modules/ecosystem
+	url = git@github.com:kabirkhyrul/pluximo-ecosystem.git
+[submodule "modules/foundation"]
+	path = modules/foundation
+	url = git@github.com:kabirkhyrul/pluximo-foundation.git
+[submodule "modules/support"]
+	path = modules/support
+	url = git@github.com:kabirkhyrul/pluximo-support.git
+[submodule "modules/admin-shell"]
+	path = modules/admin-shell
+	url = git@github.com:kabirkhyrul/pluximo-admin-shell.git
