@@ -1,0 +1,500 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-08T03:08:41+00:00\n"
+"PO-Revision-Date: 2026-08-08T03:08:41+00:00\n"
+"Language: hi_IN\n"
+
+#: src/Admin/BulkConverter.php:34
+msgid "Permission denied."
+msgstr "अनुमति अस्वीकृत।"
+
+#. Plugin URI of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "https://wordpress.org/plugins/png-to-webp-converter"
+msgstr "https://wordpress.org/plugins/png-to-webp-converter"
+
+#. Author of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "Pluximo"
+msgstr "Pluximo"
+
+#: src/Admin/AdminSettings.php:114
+msgid "Scanning Media Library for PNG images..."
+msgstr "PNG छवियों के लिए मीडिया लाइब्रेरी स्कैन की जा रही है..."
+
+#: src/Admin/AdminSettings.php:115
+msgid "Scanning..."
+msgstr "स्कैन किया जा रहा है..."
+
+#. translators: %d: Number of PNG images found.
+#: src/Admin/AdminSettings.php:120
+#, php-format
+msgid "Found %d PNG images to convert."
+msgstr "रूपांतरित करने के लिए %d PNG छवियां मिलीं।"
+
+#. translators: 1: Current image index, 2: Total image count.
+#: src/Admin/AdminSettings.php:122
+#, php-format
+msgid "Converting image %1$d of %2$d..."
+msgstr "छवि %1$d का %2$d रूपांतरित किया जा रहा है..."
+
+#: src/Admin/AdminSettings.php:127
+msgid "Bulk conversion completed successfully!"
+msgstr "बल्क रूपांतरण सफलतापूर्वक पूरा हुआ!"
+
+#. translators: 1: Processed count, 2: Total count, 3: Image ID, 4: Image filename, 5: Saved size.
+#: src/Admin/AdminSettings.php:134
+#, php-format
+msgid "[%1$d/%2$d] Converted #%3$d (%4$s) - Saved %5$s"
+msgstr "[%1$d/%2$d] रूपांतरित #%3$d (%4$s) - सहेजा गया %5$s"
+
+#. translators: 1: Processed count, 2: Total count, 3: Image ID, 4: Error message.
+#: src/Admin/AdminSettings.php:136
+#, php-format
+msgid "[%1$d/%2$d] Error #%3$d: %4$s"
+msgstr "[%1$d/%2$d] त्रुटि #%3$d: %4$s"
+
+#. translators: 1: Processed count, 2: Total count, 3: Image ID.
+#: src/Admin/AdminSettings.php:138
+#, php-format
+msgid "[%1$d/%2$d] AJAX error processing #%3$d"
+msgstr "[%1$d/%2$d] #%3$d को संसाधित करने में AJAX त्रुटि"
+
+#: src/Admin/AdminSettings.php:139
+msgid "An error occurred during conversion."
+msgstr "रूपांतरण के दौरान एक त्रुटि हुई।"
+
+#: src/Admin/BulkConverter.php:105
+msgid "Invalid attachment ID."
+msgstr "अमान्य संलग्नक आईडी।"
+
+#. translators: %d: attachment ID
+#: src/Admin/BulkConverter.php:112
+#, php-format
+msgid "Attachment #%d file not found."
+msgstr "संलग्नक #%d फ़ाइल नहीं मिली।"
+
+#: src/Admin/BulkConverter.php:130
+msgid "Conversion failed."
+msgstr "रूपांतरण विफल रहा।"
+
+#. translators: %s: Upper-case target format name, e.g. WEBP or AVIF
+#: src/ConverterEngine.php:94
+#, php-format
+msgid "Failed to convert PNG to %s."
+msgstr "PNG को %s में बदलने में विफल।"
+
+#: src/ConverterEngine.php:125
+msgid "Source PNG file does not exist."
+msgstr "स्रोत PNG फ़ाइल मौजूद नहीं है।"
+
+#: src/ConverterEngine.php:128
+msgid "File is not a PNG image."
+msgstr "फ़ाइल एक PNG छवि नहीं है।"
+
+#: src/Drivers/AvifDriver.php:66
+#: src/Drivers/WebpDriver.php:39
+msgid "GD Graphics Library"
+msgstr "जीडी ग्राफिक्स लाइब्रेरी"
+
+#: src/Drivers/AvifDriver.php:70
+#: src/Drivers/WebpDriver.php:43
+msgid "ImageMagick (Imagick)"
+msgstr "इमेजमैजिक (इमैजिक)"
+
+#: src/Drivers/AvifDriver.php:73
+#: src/Drivers/WebpDriver.php:46
+msgid "WordPress WP_Image_Editor"
+msgstr "वर्डप्रेस WP_Image_Editor"
+
+#: templates/admin/settings-page.php:64
+msgid "Images Converted"
+msgstr "रूपांतरित छवियां"
+
+#: templates/admin/settings-page.php:68
+msgid "Space Saved"
+msgstr "बचाई गई जगह"
+
+#: templates/admin/settings-page.php:115
+msgid "PHP Version:"
+msgstr "पीएचपी संस्करण:"
+
+#: templates/admin/settings-page.php:120
+msgid "Writable"
+msgstr "लिखने योग्य"
+
+#. translators: %s: Backup folder path
+#: templates/admin/settings-page.php:393
+#, php-format
+msgid "Saves a backup copy of original PNG files in %s before converting."
+msgstr "रूपांतरित करने से पहले %s में मूल PNG फ़ाइलों की एक बैकअप प्रति सहेजता है।"
+
+#: templates/admin/settings-page.php:185
+msgid "Start Bulk Conversion"
+msgstr "बल्क रूपांतरण प्रारंभ करें"
+
+#. Plugin Name of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "Auto PNG to WebP & AVIF Converter"
+msgstr "स्वचालित PNG से WebP और AVIF कन्वर्टर"
+
+#. Description of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "Automatically convert PNG images to WebP or AVIF, preserve transparency, optimize quality, keep optional backups, and bulk-convert existing Media Library images."
+msgstr "PNG छवियों को स्वचालित रूप से WebP या AVIF में बदलें, पारदर्शिता बनाए रखें, गुणवत्ता अनुकूलित करें, वैकल्पिक बैकअप रखें और मौजूदा मीडिया लाइब्रेरी छवियों को एक साथ कन्वर्ट करें।"
+
+#: src/Admin/AdminSettings.php:57
+#: templates/admin/settings-page.php:53
+msgid "PNG to WebP & AVIF Converter"
+msgstr "PNG से WebP और AVIF कन्वर्टर"
+
+#: src/Admin/AdminSettings.php:58
+msgid "PNG Optimizer"
+msgstr "PNG ऑप्टिमाइज़र"
+
+#: src/Admin/AdminSettings.php:116
+#: templates/admin/settings-page.php:145
+msgid "Scan Media Library"
+msgstr "मीडिया लाइब्रेरी स्कैन करें"
+
+#: src/Admin/AdminSettings.php:117
+#: templates/admin/settings-page.php:188
+msgid "Re-scan Library"
+msgstr "पुनः लाइब्रेरी स्कैन करें"
+
+#: src/Admin/AdminSettings.php:118
+msgid "No unconverted PNG images found in Media Library."
+msgstr "मीडिया लाइब्रेरी में कोई अपरिवर्तित PNG चित्र नहीं मिला।"
+
+#. translators: 1: Processed count, 2: Total count, 3: Percentage completed.
+#: src/Admin/AdminSettings.php:124
+#, php-format
+msgid "%1$d of %2$d images processed (%3$d%%)"
+msgstr "%1$d / %2$d चित्र संसाधित (%3$d%%)"
+
+#: src/Admin/AdminSettings.php:125
+msgid "Conversion paused. Click Resume to continue."
+msgstr "रूपांतरण रोका गया। जारी रखने के लिए रीज़्यूम पर क्लिक करें।"
+
+#: src/Admin/AdminSettings.php:126
+msgid "Conversion cancelled by user."
+msgstr "उपयोगकर्ता द्वारा रूपांतरण रद्द किया गया।"
+
+#: src/Admin/AdminSettings.php:128
+msgid "Bulk Conversion Complete"
+msgstr "थोक रूपांतरण पूरा हुआ"
+
+#: src/Admin/AdminSettings.php:129
+#: templates/admin/settings-page.php:211
+msgid "Pause"
+msgstr "रोकें"
+
+#: src/Admin/AdminSettings.php:130
+msgid "Resume"
+msgstr "पुनः शुरू करें"
+
+#: src/Admin/AdminSettings.php:131
+#: templates/admin/settings-page.php:214
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: src/Admin/AdminSettings.php:132
+#: templates/admin/settings-page.php:242
+msgid "Download Error Log"
+msgstr "त्रुटि लॉग डाउनलोड करें"
+
+#: src/Admin/AdminSettings.php:140
+msgid "You have unsaved changes."
+msgstr "आपके पास अवांछित परिवर्तन हैं।"
+
+#: src/Admin/AdminSettings.php:141
+#: templates/admin/settings-page.php:44
+msgid "Settings saved successfully."
+msgstr "सेटिंग्स सफलतापूर्वक सहेजी गईं।"
+
+#: templates/admin/settings-page.php:56
+msgid "Server Ready"
+msgstr "सर्वर तैयार"
+
+#: templates/admin/settings-page.php:56
+msgid "Attention Required"
+msgstr "ध्यान देने की आवश्यकता है"
+
+#: templates/admin/settings-page.php:59
+msgid "Optimize your WordPress images with safe, task-oriented batch workflows."
+msgstr "सुरक्षित, कार्य-उन्मुख बैच कार्यप्रवाहों के साथ अपने वर्डप्रेस चित्रों को अनुकूलित करें।"
+
+#: templates/admin/settings-page.php:81
+msgid "Your server supports WebP and AVIF · Upload folder is writable"
+msgstr "आपका सर्वर WebP और AVIF का समर्थन करता है · अपलोड फ़ोल्डर लिखने योग्य है"
+
+#: templates/admin/settings-page.php:83
+msgid "Your server supports WebP · Upload folder is writable"
+msgstr "आपका सर्वर WebP का समर्थन करता है · अपलोड फ़ोल्डर लिखने योग्य है"
+
+#: templates/admin/settings-page.php:92
+msgid "Server image library support is missing. WebP conversion disabled."
+msgstr "सर्वर छवि लाइब्रेरी का समर्थन गायब है। WebP रूपांतरण अक्षम है।"
+
+#: templates/admin/settings-page.php:94
+msgid "Upload directory is not writable by server."
+msgstr "अपलोड निर्देशिका सर्वर द्वारा लिखने योग्य नहीं है।"
+
+#: templates/admin/settings-page.php:102
+msgid "View technical details"
+msgstr "तकनीकी विवरण देखें"
+
+#: templates/admin/settings-page.php:107
+msgid "WebP Engine:"
+msgstr "WebP इंजन:"
+
+#: templates/admin/settings-page.php:108
+msgid "Unavailable"
+msgstr "अनुपलब्ध"
+
+#: templates/admin/settings-page.php:111
+msgid "AVIF Engine:"
+msgstr "AVIF इंजन:"
+
+#: templates/admin/settings-page.php:112
+msgid "Not supported by PHP"
+msgstr "PHP द्वारा समर्थित नहीं है"
+
+#: templates/admin/settings-page.php:119
+msgid "Upload Directory:"
+msgstr "अपलोड निर्देशिका:"
+
+#: templates/admin/settings-page.php:120
+msgid "Read-Only / Permission Denied"
+msgstr "केवल पढ़ने योग्य / अनुमति अस्वीकृत"
+
+#: templates/admin/settings-page.php:131
+msgid "Optimize Existing Images"
+msgstr "मौजूदा चित्रों को अनुकूलित करें"
+
+#: templates/admin/settings-page.php:133
+msgid "Step 1 of 3: Scan"
+msgstr "चरण 1 / 3: स्कैन"
+
+#: templates/admin/settings-page.php:140
+msgid "Scan your WordPress Media Library to analyze PNG images and calculate potential storage savings before converting."
+msgstr "रूपांतरित करने से पहले PNG चित्रों का विश्लेषण करने और संभावित संग्रहण बचत की गणना करने के लिए अपनी वर्डप्रेस मीडिया लाइब्रेरी स्कैन करें।"
+
+#: templates/admin/settings-page.php:149
+msgid "Nothing will be changed during the scan."
+msgstr "स्कैन के दौरान कुछ भी परिवर्तित नहीं होगा।"
+
+#: templates/admin/settings-page.php:161
+msgid "Eligible PNG Images"
+msgstr "योग्य PNG चित्र"
+
+#: templates/admin/settings-page.php:165
+msgid "Current Total Size"
+msgstr "वर्तमान कुल आकार"
+
+#: templates/admin/settings-page.php:169
+msgid "Estimated Space Savings (~45%)"
+msgstr "अनुमानित स्थान बचत (~45%)"
+
+#: templates/admin/settings-page.php:173
+msgid "Skipped / Unreadable Files"
+msgstr "छोड़ी गई / न पढ़ी जा सकने वाली फ़ाइलें"
+
+#: templates/admin/settings-page.php:196
+msgid "Preparing image queue..."
+msgstr "इमेज कतार तैयार की जा रही है..."
+
+#: templates/admin/settings-page.php:206
+msgid "0 of 0 images processed"
+msgstr "0 / 0 चित्र संसाधित"
+
+#: templates/admin/settings-page.php:219
+msgid "Conversion Activity Log"
+msgstr "रूपांतरण गतिविधि लॉग"
+
+#: templates/admin/settings-page.php:229
+msgid "Bulk Conversion Complete!"
+msgstr "थोक रूपांतरण पूरा हुआ!"
+
+#: templates/admin/settings-page.php:231
+msgid "All eligible PNG images have been converted to optimized web formats."
+msgstr "सभी योग्य PNG चित्र अनुकूलित वेब स्वरूपों में परिवर्तित हो गए हैं।"
+
+#: templates/admin/settings-page.php:238
+msgid "Start New Scan"
+msgstr "नया स्कैन प्रारंभ करें"
+
+#: templates/admin/settings-page.php:261
+msgid "Optimize New Uploads"
+msgstr "नए अपलोड अनुकूलित करें"
+
+#: templates/admin/settings-page.php:269
+msgid "Automatic optimization on upload"
+msgstr "अपलोड करने पर स्वचालित अनुकूलन"
+
+#: templates/admin/settings-page.php:272
+msgid "Automatically converts new PNG uploads using the processing timing selected below."
+msgstr "नीचे चुने गए प्रसंस्करण समय का उपयोग करके स्वचालित रूप से नए PNG अपलोड को परिवर्तित करता है।"
+
+#: templates/admin/settings-page.php:277
+msgid "Upload Conversion Timing"
+msgstr "अपलोड रूपांतरण का समय"
+
+#: templates/admin/settings-page.php:279
+msgid "Convert immediately"
+msgstr "तुरंत रूपांतरित करें"
+
+#: templates/admin/settings-page.php:279
+msgid "Converts the PNG during the upload request."
+msgstr "अपलोड अनुरोध के दौरान PNG को रूपांतरित करता है।"
+
+#: templates/admin/settings-page.php:280
+msgid "Convert with WP-Cron"
+msgstr "WP-Cron के साथ रूपांतरित करें"
+
+#: templates/admin/settings-page.php:280
+msgid "Queues conversion after upload. The PNG stays available until WP-Cron runs."
+msgstr "अपलोड के बाद रूपांतरण को कतार में रखता है। WP-Cron चलने तक PNG उपलब्ध रहता है।"
+
+#: templates/admin/settings-page.php:288
+msgid "Target Output Format"
+msgstr "लक्ष्य आउटपुट प्रारूप"
+
+#: templates/admin/settings-page.php:296
+msgid "Automatic"
+msgstr "स्वचालित"
+
+#: templates/admin/settings-page.php:297
+msgid "Recommended"
+msgstr "अनुशंसित"
+
+#: templates/admin/settings-page.php:300
+msgid "Best compatible format for each image automatically"
+msgstr "स्वचालित रूप से प्रत्येक चित्र के लिए सबसे अनुकूल प्रारूप"
+
+#: templates/admin/settings-page.php:313
+msgid "Excellent compatibility and smaller file sizes"
+msgstr "उत्कृष्ट अनुकूलता और छोटे फ़ाइल आकार"
+
+#: templates/admin/settings-page.php:325
+msgid "Unsupported on server"
+msgstr "सर्वर पर असमर्थित"
+
+#: templates/admin/settings-page.php:329
+msgid "Maximum compression ratio, but requires slightly more CPU to generate"
+msgstr "अधिकतम संपीड़न अनुपात, लेकिन उत्पन्न करने के लिए थोड़े अधिक CPU की आवश्यकता होती है"
+
+#: templates/admin/settings-page.php:341
+msgid "Compression Quality"
+msgstr "संपीड़न गुणवत्ता"
+
+#: templates/admin/settings-page.php:342
+msgid "Quality Presets"
+msgstr "गुणवत्ता प्रीसेट"
+
+#: templates/admin/settings-page.php:344
+msgid "Balanced"
+msgstr "संतुलित"
+
+#: templates/admin/settings-page.php:345
+msgid "Recommended (82%)"
+msgstr "अनुशंसित (82%)"
+
+#: templates/admin/settings-page.php:348
+msgid "Smaller files"
+msgstr "छोटी फ़ाइलें"
+
+#: templates/admin/settings-page.php:349
+msgid "High savings (65%)"
+msgstr "उच्च बचत (65%)"
+
+#: templates/admin/settings-page.php:352
+msgid "Higher quality"
+msgstr "उच्च गुणवत्ता"
+
+#: templates/admin/settings-page.php:353
+msgid "Crisp details (92%)"
+msgstr "स्पष्ट विवरण (92%)"
+
+#: templates/admin/settings-page.php:356
+msgid "Custom"
+msgstr "कस्टम"
+
+#: templates/admin/settings-page.php:357
+msgid "Manual slider"
+msgstr "मैनुअल स्लाइडर"
+
+#: templates/admin/settings-page.php:362
+msgid "Custom Quality Slider"
+msgstr "कस्टम गुणवत्ता स्लाइडर"
+
+#: templates/admin/settings-page.php:368
+msgid "Estimated reduction: 35–55% · Suitable for photographs and product images."
+msgstr "अनुमानित कमी: 35-55% · तस्वीरों और उत्पाद चित्रों के लिए उपयुक्त।"
+
+#: templates/admin/settings-page.php:378
+msgid "Safety & Backup Settings"
+msgstr "सुरक्षा और बैकअप सेटिंग्स"
+
+#: templates/admin/settings-page.php:382
+msgid "Original File Preservation"
+msgstr "मूल फ़ाइल का संरक्षण"
+
+#: templates/admin/settings-page.php:389
+msgid "Preserve original PNG files (Recommended)"
+msgstr "मूल PNG फ़ाइलें सुरक्षित रखें (अनुशंसित)"
+
+#: templates/admin/settings-page.php:403
+msgid "Delete originals after successful conversion"
+msgstr "सफल रूपांतरण के बाद मूल फ़ाइलें हटाएं"
+
+#: templates/admin/settings-page.php:405
+msgid "Frees up disk space immediately. Note: Converted images cannot be reverted back to original PNG files if removed."
+msgstr "तुरंत डिस्क स्थान खाली करता है। नोट: हटाए जाने पर परिवर्तित छवियों को मूल PNG फ़ाइलों में वापस नहीं लाया जा सकता है।"
+
+#: templates/admin/settings-page.php:414
+msgid "Storage Impact Notice"
+msgstr "संग्रहण प्रभाव की सूचना"
+
+#: templates/admin/settings-page.php:415
+msgid "Preserving original PNGs safely retains your original source assets, but requires extra disk space until backups are cleared."
+msgstr "मूल PNGs को सुरक्षित रखने से आपकी मूल संपत्तियां बनी रहती हैं, लेकिन बैकअप साफ़ होने तक अतिरिक्त डिस्क स्थान की आवश्यकता होती है।"
+
+#: templates/admin/settings-page.php:423
+msgid "Backup Deletion Timing"
+msgstr "बैकअप हटाने का समय"
+
+#: templates/admin/settings-page.php:425
+msgid "Delete immediately"
+msgstr "तुरंत हटाएं"
+
+#: templates/admin/settings-page.php:425
+msgid "Deletes matching backups as soon as the Media Library item is deleted."
+msgstr "मीडिया लाइब्रेरी आइटम हटाते ही मिलान वाले बैकअप हटा देता है।"
+
+#: templates/admin/settings-page.php:426
+msgid "Delete with WP-Cron"
+msgstr "WP-Cron के साथ हटाएं"
+
+#: templates/admin/settings-page.php:426
+msgid "Queues matching backup files for background deletion."
+msgstr "पृष्ठभूमि में हटाने के लिए मिलान वाली बैकअप फ़ाइलों को कतार में रखता है।"
+
+#: templates/admin/settings-page.php:438
+msgid "You have unsaved changes"
+msgstr "आपके पास अवांछित परिवर्तन हैं"
+
+#: templates/admin/settings-page.php:442
+msgid "Discard changes"
+msgstr "परिवर्तन रद्द करें"
+
+#: templates/admin/settings-page.php:445
+msgid "Save changes"
+msgstr "परिवर्तन सहेजें"

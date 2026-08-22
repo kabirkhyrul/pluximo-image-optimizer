@@ -1,0 +1,326 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pluximo Core\n"
+"Report-Msgid-Bugs-To: https://pluximo.com/contact/\n"
+"Last-Translator: Pluximo Team <support@pluximo.com>\n"
+"Language-Team: Pluximo Team <support@pluximo.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-08T16:57:18+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: pluximo-core\n"
+
+#: src/Admin/AdminMenu.php:64
+#: src/Admin/AdminMenu.php:65
+#: src/Showcase/OrgApiFetcher.php:79
+#: templates/showcase.php:33
+msgid "Pluximo"
+msgstr ""
+
+#: src/Admin/AdminMenu.php:163
+#: src/Support/SupportManager.php:57
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: src/Showcase/ProApiFetcher.php:79
+msgid "Pluximo Team"
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:81
+#: templates/showcase.php:178
+msgid "Auto PNG to WebP & AVIF Converter"
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:83
+msgid "Automatically convert uploaded PNG images to WebP and AVIF formats with zero quality loss and maximum speed."
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:93
+msgid "Pluximo Core & Loyalty Rewards"
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:95
+msgid "Customer loyalty rewards, points system, and referral engine for WordPress and WooCommerce stores."
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:105
+msgid "Pluximo Smart Inventory Manager"
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:107
+msgid "Real-time stock management, multi-warehouse tracking, and automated stock alerts for WooCommerce."
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:117
+msgid "Pluximo Loyalty & Rewards Pro"
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:119
+msgid "Advanced VIP tiers, custom rewards, automated email triggers, gamification, and multi-currency support."
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:129
+msgid "Pluximo Inventory & Warehouse Pro"
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:131
+msgid "Multi-location inventory routing, purchase orders, supplier management, and automated stock forecasting."
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:141
+msgid "Pluximo Speed & Image Optimizer Pro"
+msgstr ""
+
+#: src/Showcase/ShowcaseFetcher.php:143
+msgid "Full CDN integration, background bulk queue, WebP/AVIF auto-compression, and CSS/JS minification."
+msgstr ""
+
+#: src/Support/SupportApiSender.php:37
+msgid "Please confirm your consent to the GDPR privacy notice to submit a support request."
+msgstr ""
+
+#: src/Support/SupportApiSender.php:46
+msgid "Please fill in all required fields (Name, Email, and Message)."
+msgstr ""
+
+#: src/Support/SupportApiSender.php:53
+msgid "Please provide a valid email address."
+msgstr ""
+
+#. translators: %s: Error message from WP_Error.
+#: src/Support/SupportApiSender.php:74
+#, php-format
+msgid "Could not connect to support server: %s"
+msgstr ""
+
+#: src/Support/SupportApiSender.php:85
+msgid "Support ticket submitted successfully! Our team will contact you shortly."
+msgstr ""
+
+#: src/Support/SupportApiSender.php:92
+msgid "Support ticket received! We will reach out to you via your selected communication method."
+msgstr ""
+
+#: src/Support/SupportManager.php:80
+msgid "Permission denied."
+msgstr ""
+
+#: templates/showcase.php:34
+msgid "WordPress and WooCommerce plugins built for faster, safer stores."
+msgstr ""
+
+#: templates/showcase.php:38
+msgid "Visit Pluximo.com"
+msgstr ""
+
+#: templates/showcase.php:47
+msgid "Our Plugins"
+msgstr ""
+
+#: templates/showcase.php:51
+msgid "Get Support"
+msgstr ""
+
+#: templates/showcase.php:110
+#, php-format
+msgid "Pro Edition · v%s · Tested compatible"
+msgstr ""
+
+#: templates/showcase.php:112
+#, php-format
+msgid "Free · v%s · Updated recently"
+msgstr ""
+
+#: templates/showcase.php:121
+msgid "Active on site"
+msgstr ""
+
+#: templates/showcase.php:124
+msgid "Open settings"
+msgstr ""
+
+#: templates/showcase.php:128
+msgid "Premium"
+msgstr ""
+
+#: templates/showcase.php:131
+msgid "View Pro"
+msgstr ""
+
+#: templates/showcase.php:136
+msgid "WordPress.org"
+msgstr ""
+
+#: templates/showcase.php:139
+msgid "View Plugin"
+msgstr ""
+
+#: templates/showcase.php:156
+msgid "How can we help?"
+msgstr ""
+
+#: templates/showcase.php:158
+msgid "Tell us what happened and we’ll send your request to the right support channel."
+msgstr ""
+
+#: templates/showcase.php:170
+msgid "What do you need help with?"
+msgstr ""
+
+#: templates/showcase.php:175
+msgid "Product *"
+msgstr ""
+
+#: templates/showcase.php:177
+msgid "Select a product..."
+msgstr ""
+
+#: templates/showcase.php:179
+msgid "Checkout Bot Shield"
+msgstr ""
+
+#: templates/showcase.php:180
+msgid "Filterable Post Gallery"
+msgstr ""
+
+#: templates/showcase.php:181
+msgid "Pluximo Form Blocks"
+msgstr ""
+
+#: templates/showcase.php:182
+msgid "Billing or account"
+msgstr ""
+
+#: templates/showcase.php:183
+msgid "Something else"
+msgstr ""
+
+#: templates/showcase.php:188
+msgid "Issue Type *"
+msgstr ""
+
+#: templates/showcase.php:190
+msgid "Select issue type..."
+msgstr ""
+
+#: templates/showcase.php:191
+msgid "Bug or error"
+msgstr ""
+
+#: templates/showcase.php:192
+msgid "Setup help"
+msgstr ""
+
+#: templates/showcase.php:193
+msgid "Feature request"
+msgstr ""
+
+#: templates/showcase.php:194
+msgid "Pre-sales question"
+msgstr ""
+
+#: templates/showcase.php:204
+msgid "Describe the issue"
+msgstr ""
+
+#: templates/showcase.php:209
+msgid "Your Name *"
+msgstr ""
+
+#: templates/showcase.php:213
+msgid "Reply-to Email *"
+msgstr ""
+
+#: templates/showcase.php:219
+msgid "Subject *"
+msgstr ""
+
+#: templates/showcase.php:220
+msgid "Brief summary of what happened..."
+msgstr ""
+
+#: templates/showcase.php:224
+msgid "Message *"
+msgstr ""
+
+#: templates/showcase.php:225
+msgid "Please describe the steps to reproduce or details of your request..."
+msgstr ""
+
+#: templates/showcase.php:229
+msgid "Attachment (Optional)"
+msgstr ""
+
+#: templates/showcase.php:234
+msgid "Attach screenshot or file"
+msgstr ""
+
+#: templates/showcase.php:245
+msgid "Delivery options"
+msgstr ""
+
+#: templates/showcase.php:249
+msgid "How should we reply?"
+msgstr ""
+
+#: templates/showcase.php:251
+msgid "Email — Recommended"
+msgstr ""
+
+#: templates/showcase.php:252
+msgid "Slack"
+msgstr ""
+
+#: templates/showcase.php:253
+msgid "WhatsApp"
+msgstr ""
+
+#: templates/showcase.php:258
+msgid "Contact details *"
+msgstr ""
+
+#: templates/showcase.php:265
+msgid "Include technical information?"
+msgstr ""
+
+#: templates/showcase.php:266
+msgid "This helps us diagnose plugin errors faster."
+msgstr ""
+
+#: templates/showcase.php:276
+msgid "Technical snapshot:"
+msgstr ""
+
+#: templates/showcase.php:278
+msgid "View information being shared"
+msgstr ""
+
+#: templates/showcase.php:289
+msgid "I agree that Pluximo may use my contact information to respond to this request."
+msgstr ""
+
+#: templates/showcase.php:290
+msgid "Privacy policy"
+msgstr ""
+
+#: templates/showcase.php:295
+msgid "Include my site’s technical information to help diagnose the issue."
+msgstr ""
+
+#: templates/showcase.php:306
+msgid "Submit support request"
+msgstr ""
+
+#: templates/showcase.php:310
+msgid "We usually reply within one business day."
+msgstr ""
+
+#: templates/showcase.php:323
+msgid "Technical Information"
+msgstr ""
+
+#: templates/showcase.php:326
+msgid "The following non-sensitive system environment details will be included with your ticket to assist with debugging:"
+msgstr ""

@@ -1,0 +1,325 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pluximo Core\n"
+"Report-Msgid-Bugs-To: https://pluximo.com/contact/\n"
+"Last-Translator: Pluximo Team <support@pluximo.com>\n"
+"Language-Team: French <support@pluximo.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-08T08:24:55+00:00\n"
+"PO-Revision-Date: 2026-08-08T22:58:00+00:00\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/Admin/AdminMenu.php:64
+#: src/Admin/AdminMenu.php:65
+#: src/Showcase/OrgApiFetcher.php:79
+#: templates/showcase.php:33
+msgid "Pluximo"
+msgstr "Pluximo"
+
+#: src/Support/SupportManager.php:80
+msgid "Permission denied."
+msgstr "Permission refusée."
+
+#: src/Admin/AdminMenu.php:163
+#: src/Support/SupportManager.php:57
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Vous ne disposez pas des autorisations suffisantes pour accéder à cette page."
+
+#: src/Showcase/ProApiFetcher.php:79
+msgid "Pluximo Team"
+msgstr "Équipe Pluximo"
+
+#: src/Showcase/ShowcaseFetcher.php:81
+#: templates/showcase.php:178
+msgid "Auto PNG to WebP & AVIF Converter"
+msgstr "Convertisseur automatique PNG vers WebP & AVIF"
+
+#: src/Showcase/ShowcaseFetcher.php:83
+msgid "Automatically convert uploaded PNG images to WebP and AVIF formats with zero quality loss and maximum speed."
+msgstr "Convertissez automatiquement les images PNG téléversées aux formats WebP et AVIF sans perte de qualité et avec une vitesse maximale."
+
+#: src/Showcase/ShowcaseFetcher.php:93
+msgid "Pluximo Core & Loyalty Rewards"
+msgstr "Pluximo Core & Récompenses de Fidélité"
+
+#: src/Showcase/ShowcaseFetcher.php:95
+msgid "Customer loyalty rewards, points system, and referral engine for WordPress and WooCommerce stores."
+msgstr "Récompenses de fidélité client, système de points et moteur de parrainage pour boutiques WordPress et WooCommerce."
+
+#: src/Showcase/ShowcaseFetcher.php:105
+msgid "Pluximo Smart Inventory Manager"
+msgstr "Gestionnaire d'Inventaire Intelligent Pluximo"
+
+#: src/Showcase/ShowcaseFetcher.php:107
+msgid "Real-time stock management, multi-warehouse tracking, and automated stock alerts for WooCommerce."
+msgstr "Gestion des stocks en temps réel, suivi multi-entrepôts et alertes de stock automatisées pour WooCommerce."
+
+#: src/Showcase/ShowcaseFetcher.php:117
+msgid "Pluximo Loyalty & Rewards Pro"
+msgstr "Pluximo Fidélité & Récompenses Pro"
+
+#: src/Showcase/ShowcaseFetcher.php:119
+msgid "Advanced VIP tiers, custom rewards, automated email triggers, gamification, and multi-currency support."
+msgstr "Niveaux VIP avancés, récompenses personnalisées, déclencheurs d'e-mails automatisés, ludification et support multi-devises."
+
+#: src/Showcase/ShowcaseFetcher.php:129
+msgid "Pluximo Inventory & Warehouse Pro"
+msgstr "Pluximo Inventaire & Entrepôt Pro"
+
+#: src/Showcase/ShowcaseFetcher.php:131
+msgid "Multi-location inventory routing, purchase orders, supplier management, and automated stock forecasting."
+msgstr "Routage d'inventaire multi-sites, bons de commande, gestion des fournisseurs et prévisions de stock automatisées."
+
+#: src/Showcase/ShowcaseFetcher.php:141
+msgid "Pluximo Speed & Image Optimizer Pro"
+msgstr "Pluximo Optimiseur de Vitesse et d'Images Pro"
+
+#: src/Showcase/ShowcaseFetcher.php:143
+msgid "Full CDN integration, background bulk queue, WebP/AVIF auto-compression, and CSS/JS minification."
+msgstr "Intégration CDN complète, file d'attente globale en arrière-plan, auto-compression WebP/AVIF et minification CSS/JS."
+
+#: src/Support/SupportApiSender.php:37
+msgid "Please confirm your consent to the GDPR privacy notice to submit a support request."
+msgstr "Veuillez confirmer votre consentement à la politique de confidentialité RGPD pour soumettre une demande de support."
+
+#: src/Support/SupportApiSender.php:46
+msgid "Please fill in all required fields (Name, Email, and Message)."
+msgstr "Veuillez remplir tous les champs obligatoires (Nom, E-mail et Message)."
+
+#: src/Support/SupportApiSender.php:53
+msgid "Please provide a valid email address."
+msgstr "Veuillez fournir une adresse e-mail valide."
+
+#: src/Support/SupportApiSender.php:74
+#, php-format
+msgid "Could not connect to support server: %s"
+msgstr "Impossible de se connecter au serveur de support : %s"
+
+#: src/Support/SupportApiSender.php:85
+msgid "Support ticket submitted successfully! Our team will contact you shortly."
+msgstr "Ticket de support soumis avec succès ! Notre équipe vous me recontacter sous peu."
+
+#: src/Support/SupportApiSender.php:92
+msgid "Support ticket received! We will reach out to you via your selected communication method."
+msgstr "Ticket de support reçu ! Nous vous contacterons via le moyen de communication sélectionné."
+
+#: templates/showcase.php:209
+msgid "Your Name *"
+msgstr "Votre Nom *"
+
+#: templates/showcase.php:34
+msgid "WordPress and WooCommerce plugins built for faster, safer stores."
+msgstr "Extensions WordPress et WooCommerce conçues pour des boutiques plus rapides et plus sûres."
+
+#: templates/showcase.php:38
+msgid "Visit Pluximo.com"
+msgstr "Visiter Pluximo.com"
+
+#: templates/showcase.php:47
+msgid "Our Plugins"
+msgstr "Nos Extensions"
+
+#: templates/showcase.php:51
+msgid "Get Support"
+msgstr "Obtenir du Support"
+
+#: templates/showcase.php:110
+#, php-format
+msgid "Pro Edition · v%s · Tested compatible"
+msgstr "Édition Pro · v%s · Testé et compatible"
+
+#: templates/showcase.php:112
+#, php-format
+msgid "Free · v%s · Updated recently"
+msgstr "Gratuit · v%s · Mis à jour récemment"
+
+#: templates/showcase.php:121
+msgid "Active on site"
+msgstr "Actif sur le site"
+
+#: templates/showcase.php:124
+msgid "Open settings"
+msgstr "Ouvrir les réglages"
+
+#: templates/showcase.php:128
+msgid "Premium"
+msgstr "Premium"
+
+#: templates/showcase.php:131
+msgid "View Pro"
+msgstr "Voir Pro"
+
+#: templates/showcase.php:136
+msgid "WordPress.org"
+msgstr "WordPress.org"
+
+#: templates/showcase.php:139
+msgid "View Plugin"
+msgstr "Voir l'extension"
+
+#: templates/showcase.php:156
+msgid "How can we help?"
+msgstr "Comment pouvons-nous vous aider ?"
+
+#: templates/showcase.php:158
+msgid "Tell us what happened and we’ll send your request to the right support channel."
+msgstr "Dites-nous ce qui s'est passé et nous enverrons votre demande au bon canal d'assistance."
+
+#: templates/showcase.php:170
+msgid "What do you need help with?"
+msgstr "Avec quoi avez-vous besoin d'aide ?"
+
+#: templates/showcase.php:175
+msgid "Product *"
+msgstr "Produit *"
+
+#: templates/showcase.php:177
+msgid "Select a product..."
+msgstr "Sélectionnez un produit..."
+
+#: templates/showcase.php:179
+msgid "Checkout Bot Shield"
+msgstr "Checkout Bot Shield"
+
+#: templates/showcase.php:180
+msgid "Filterable Post Gallery"
+msgstr "Filterable Post Gallery"
+
+#: templates/showcase.php:181
+msgid "Pluximo Form Blocks"
+msgstr "Pluximo Form Blocks"
+
+#: templates/showcase.php:182
+msgid "Billing or account"
+msgstr "Facturation ou compte"
+
+#: templates/showcase.php:183
+msgid "Something else"
+msgstr "Autre chose"
+
+#: templates/showcase.php:188
+msgid "Issue Type *"
+msgstr "Type de problème *"
+
+#: templates/showcase.php:190
+msgid "Select issue type..."
+msgstr "Sélectionnez le type de problème..."
+
+#: templates/showcase.php:191
+msgid "Bug or error"
+msgstr "Bogue ou erreur"
+
+#: templates/showcase.php:192
+msgid "Setup help"
+msgstr "Aide à la configuration"
+
+#: templates/showcase.php:193
+msgid "Feature request"
+msgstr "Demande de fonctionnalité"
+
+#: templates/showcase.php:194
+msgid "Pre-sales question"
+msgstr "Question avant-vente"
+
+#: templates/showcase.php:204
+msgid "Describe the issue"
+msgstr "Décrivez le problème"
+
+#: templates/showcase.php:213
+msgid "Reply-to Email *"
+msgstr "E-mail de réponse *"
+
+#: templates/showcase.php:219
+msgid "Subject *"
+msgstr "Sujet *"
+
+#: templates/showcase.php:220
+msgid "Brief summary of what happened..."
+msgstr "Bref résumé de ce qui s'est passé..."
+
+#: templates/showcase.php:224
+msgid "Message *"
+msgstr "Message *"
+
+#: templates/showcase.php:225
+msgid "Please describe the steps to reproduce or details of your request..."
+msgstr "Veuillez décrire les étapes pour reproduire ou les détails de votre demande..."
+
+#: templates/showcase.php:229
+msgid "Attachment (Optional)"
+msgstr "Pièce jointe (Optionnel)"
+
+#: templates/showcase.php:234
+msgid "Attach screenshot or file"
+msgstr "Joindre une capture d'écran ou un fichier"
+
+#: templates/showcase.php:245
+msgid "Delivery options"
+msgstr "Options de réponse"
+
+#: templates/showcase.php:249
+msgid "How should we reply?"
+msgstr "Comment souhaitez-vous que nous répondions ?"
+
+#: templates/showcase.php:251
+msgid "Email — Recommended"
+msgstr "E-mail — Recommandé"
+
+#: templates/showcase.php:252
+msgid "Slack"
+msgstr "Slack"
+
+#: templates/showcase.php:253
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: templates/showcase.php:258
+msgid "Contact details *"
+msgstr "Coordonnées *"
+
+#: templates/showcase.php:265
+msgid "Include technical information?"
+msgstr "Inclure les informations techniques ?"
+
+#: templates/showcase.php:266
+msgid "This helps us diagnose plugin errors faster."
+msgstr "Cela nous aide à diagnostiquer les erreurs de l'extension plus rapidement."
+
+#: templates/showcase.php:276
+msgid "Technical snapshot:"
+msgstr "Aperçu technique :"
+
+#: templates/showcase.php:278
+msgid "View information being shared"
+msgstr "Afficher les informations partagées"
+
+#: templates/showcase.php:289
+msgid "I agree that Pluximo may use my contact information to respond to this request."
+msgstr "J'accepte que Pluximo utilise mes coordonnées pour répondre à cette demande."
+
+#: templates/showcase.php:290
+msgid "Privacy policy"
+msgstr "Politique de confidentialité"
+
+#: templates/showcase.php:295
+msgid "Include my site’s technical information to help diagnose the issue."
+msgstr "Inclure les informations techniques de mon site pour m'aider à diagnostiquer le problème."
+
+#: templates/showcase.php:306
+msgid "Submit support request"
+msgstr "Soumettre la demande de support"
+
+#: templates/showcase.php:310
+msgid "We usually reply within one business day."
+msgstr "Nous répondons généralement sous un jour ouvré."
+
+#: templates/showcase.php:323
+msgid "Technical Information"
+msgstr "Informations techniques"
+
+#: templates/showcase.php:326
+msgid "The following non-sensitive system environment details will be included with your ticket to assist with debugging:"
+msgstr "Les détails non sensibles suivants de l'environnement système seront inclus dans votre ticket pour faciliter le débogage :"

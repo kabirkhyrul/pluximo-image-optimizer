@@ -1,13 +1,13 @@
 <?php
 /**
- * Main Pluximo Support Tickets Plugin Bootstrap.
+ * Main Pluximo Image Optimizer Plugin Bootstrap.
  *
- * @package PluximoSupportTickets
+ * @package PluximoImageOptimizer
  */
 
-declare(strict_types=1);
+declare( strict_types=1 );
 
-namespace Pluximo\SupportTickets;
+namespace Pluximo\ImageOptimizer;
 
 use Pluximo\Foundation\AbstractPluginDefinition;
 use Pluximo\Foundation\Product;
@@ -29,11 +29,11 @@ final class Plugin extends AbstractPluginDefinition {
 	public function get_product(): Product {
 		return new Product(
 			array(
-				'slug'                    => 'pluximo-support-tickets',
-				'name'                    => 'Pluximo Support Tickets',
+				'slug'                    => 'pluximo-image-optimizer',
+				'name'                    => 'Image Optimizer',
 				'version'                 => '1.0.0',
-				'plugin_file'             => dirname( __DIR__ ) . '/pluximo-support-tickets.php',
-				'admin_page_slug'         => 'pluximo-support-tickets',
+				'plugin_file'             => dirname( __DIR__ ) . '/pluximo-image-optimizer.php',
+				'admin_page_slug'         => 'png-to-webp-converter',
 				'support_context'         => array( 'channel' => 'wordpress' ),
 				'enabled_shared_features' => array( 'admin-shell', 'ecosystem', 'support' ),
 			)
@@ -46,6 +46,6 @@ final class Plugin extends AbstractPluginDefinition {
 	 * @return array
 	 */
 	public function get_service_providers(): array {
-		return array( new TicketServiceProvider() );
+		return array( new ImageOptimizerServiceProvider() );
 	}
 }

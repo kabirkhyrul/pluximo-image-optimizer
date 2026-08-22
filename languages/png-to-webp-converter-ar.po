@@ -1,0 +1,500 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-08T03:08:41+00:00\n"
+"PO-Revision-Date: 2026-08-08T03:08:41+00:00\n"
+"Language: ar\n"
+
+#: src/Admin/BulkConverter.php:34
+msgid "Permission denied."
+msgstr "تم رفض الإذن."
+
+#. Plugin URI of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "https://wordpress.org/plugins/png-to-webp-converter"
+msgstr "https://wordpress.org/plugins/png-to-webp-converter"
+
+#. Author of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "Pluximo"
+msgstr "Pluximo"
+
+#: src/Admin/AdminSettings.php:114
+msgid "Scanning Media Library for PNG images..."
+msgstr "جاري فحص مكتبة الوسائط لصور PNG..."
+
+#: src/Admin/AdminSettings.php:115
+msgid "Scanning..."
+msgstr "جاري الفحص..."
+
+#. translators: %d: Number of PNG images found.
+#: src/Admin/AdminSettings.php:120
+#, php-format
+msgid "Found %d PNG images to convert."
+msgstr "تم العثور على %d صور PNG للتحويل."
+
+#. translators: 1: Current image index, 2: Total image count.
+#: src/Admin/AdminSettings.php:122
+#, php-format
+msgid "Converting image %1$d of %2$d..."
+msgstr "جاري تحويل الصورة %1$d من %2$d..."
+
+#: src/Admin/AdminSettings.php:127
+msgid "Bulk conversion completed successfully!"
+msgstr "اكتملت المعالجة الجماعية بنجاح!"
+
+#. translators: 1: Processed count, 2: Total count, 3: Image ID, 4: Image filename, 5: Saved size.
+#: src/Admin/AdminSettings.php:134
+#, php-format
+msgid "[%1$d/%2$d] Converted #%3$d (%4$s) - Saved %5$s"
+msgstr "[%1$d/%2$d] تم تحويل #%3$d (%4$s) - تم توفير %5$s"
+
+#. translators: 1: Processed count, 2: Total count, 3: Image ID, 4: Error message.
+#: src/Admin/AdminSettings.php:136
+#, php-format
+msgid "[%1$d/%2$d] Error #%3$d: %4$s"
+msgstr "[%1$d/%2$d] خطأ #%3$d: %4$s"
+
+#. translators: 1: Processed count, 2: Total count, 3: Image ID.
+#: src/Admin/AdminSettings.php:138
+#, php-format
+msgid "[%1$d/%2$d] AJAX error processing #%3$d"
+msgstr "[%1$d/%2$d] خطأ AJAX أثناء معالجة #%3$d"
+
+#: src/Admin/AdminSettings.php:139
+msgid "An error occurred during conversion."
+msgstr "حدث خطأ أثناء التحويل."
+
+#: src/Admin/BulkConverter.php:105
+msgid "Invalid attachment ID."
+msgstr "معرف المرفق غير صالح."
+
+#. translators: %d: attachment ID
+#: src/Admin/BulkConverter.php:112
+#, php-format
+msgid "Attachment #%d file not found."
+msgstr "ملف المرفق #%d غير موجود."
+
+#: src/Admin/BulkConverter.php:130
+msgid "Conversion failed."
+msgstr "فشل التحويل."
+
+#. translators: %s: Upper-case target format name, e.g. WEBP or AVIF
+#: src/ConverterEngine.php:94
+#, php-format
+msgid "Failed to convert PNG to %s."
+msgstr "فشل تحويل PNG إلى %s."
+
+#: src/ConverterEngine.php:125
+msgid "Source PNG file does not exist."
+msgstr "ملف PNG المصدر غير موجود."
+
+#: src/ConverterEngine.php:128
+msgid "File is not a PNG image."
+msgstr "الملف ليس صورة PNG."
+
+#: src/Drivers/AvifDriver.php:66
+#: src/Drivers/WebpDriver.php:39
+msgid "GD Graphics Library"
+msgstr "مكتبة رسوميات GD"
+
+#: src/Drivers/AvifDriver.php:70
+#: src/Drivers/WebpDriver.php:43
+msgid "ImageMagick (Imagick)"
+msgstr "ImageMagick (Imagick)"
+
+#: src/Drivers/AvifDriver.php:73
+#: src/Drivers/WebpDriver.php:46
+msgid "WordPress WP_Image_Editor"
+msgstr "محرر الصور لووردبريس WP_Image_Editor"
+
+#: templates/admin/settings-page.php:64
+msgid "Images Converted"
+msgstr "الصور المحولة"
+
+#: templates/admin/settings-page.php:68
+msgid "Space Saved"
+msgstr "المساحة الموفرة"
+
+#: templates/admin/settings-page.php:115
+msgid "PHP Version:"
+msgstr "إصدار PHP:"
+
+#: templates/admin/settings-page.php:120
+msgid "Writable"
+msgstr "قابل للكتابة"
+
+#. translators: %s: Backup folder path
+#: templates/admin/settings-page.php:393
+#, php-format
+msgid "Saves a backup copy of original PNG files in %s before converting."
+msgstr "يحفظ نسخة احتياطية من ملفات PNG الأصلية في %s قبل التحويل."
+
+#: templates/admin/settings-page.php:185
+msgid "Start Bulk Conversion"
+msgstr "بدء التحويل الجماعي"
+
+#. Plugin Name of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "Auto PNG to WebP & AVIF Converter"
+msgstr "المحوّل التلقائي من PNG إلى WebP وAVIF"
+
+#. Description of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "Automatically convert PNG images to WebP or AVIF, preserve transparency, optimize quality, keep optional backups, and bulk-convert existing Media Library images."
+msgstr "حوّل صور PNG تلقائيًا إلى WebP أو AVIF، مع الحفاظ على الشفافية وتحسين الجودة والاحتفاظ بنسخ احتياطية اختيارية وتحويل صور مكتبة الوسائط الحالية دفعة واحدة."
+
+#: src/Admin/AdminSettings.php:57
+#: templates/admin/settings-page.php:53
+msgid "PNG to WebP & AVIF Converter"
+msgstr "محوّل PNG إلى WebP وAVIF"
+
+#: src/Admin/AdminSettings.php:58
+msgid "PNG Optimizer"
+msgstr "محسّن PNG"
+
+#: src/Admin/AdminSettings.php:116
+#: templates/admin/settings-page.php:145
+msgid "Scan Media Library"
+msgstr "مسح مكتبة الوسائط"
+
+#: src/Admin/AdminSettings.php:117
+#: templates/admin/settings-page.php:188
+msgid "Re-scan Library"
+msgstr "إعادة مسح المكتبة"
+
+#: src/Admin/AdminSettings.php:118
+msgid "No unconverted PNG images found in Media Library."
+msgstr "لم يتم العثور على صور PNG غير محولة في مكتبة الوسائط."
+
+#. translators: 1: Processed count, 2: Total count, 3: Percentage completed.
+#: src/Admin/AdminSettings.php:124
+#, php-format
+msgid "%1$d of %2$d images processed (%3$d%%)"
+msgstr "تم معالجة %1$d من %2$d صورة (%3$d%%)"
+
+#: src/Admin/AdminSettings.php:125
+msgid "Conversion paused. Click Resume to continue."
+msgstr "تم إيقاف التحويل مؤقتًا. انقر فوق استئناف للمتابعة."
+
+#: src/Admin/AdminSettings.php:126
+msgid "Conversion cancelled by user."
+msgstr "تم إلغاء التحويل من قبل المستخدم."
+
+#: src/Admin/AdminSettings.php:128
+msgid "Bulk Conversion Complete"
+msgstr "اكتمل التحويل الجماعي"
+
+#: src/Admin/AdminSettings.php:129
+#: templates/admin/settings-page.php:211
+msgid "Pause"
+msgstr "إيقاف مؤقت"
+
+#: src/Admin/AdminSettings.php:130
+msgid "Resume"
+msgstr "استئناف"
+
+#: src/Admin/AdminSettings.php:131
+#: templates/admin/settings-page.php:214
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: src/Admin/AdminSettings.php:132
+#: templates/admin/settings-page.php:242
+msgid "Download Error Log"
+msgstr "تنزيل سجل الأخطاء"
+
+#: src/Admin/AdminSettings.php:140
+msgid "You have unsaved changes."
+msgstr "لديك تغييرات غير محفوظة."
+
+#: src/Admin/AdminSettings.php:141
+#: templates/admin/settings-page.php:44
+msgid "Settings saved successfully."
+msgstr "تم حفظ الإعدادات بنجاح."
+
+#: templates/admin/settings-page.php:56
+msgid "Server Ready"
+msgstr "الخادم جاهز"
+
+#: templates/admin/settings-page.php:56
+msgid "Attention Required"
+msgstr "يتطلب الانتباه"
+
+#: templates/admin/settings-page.php:59
+msgid "Optimize your WordPress images with safe, task-oriented batch workflows."
+msgstr "قم بتحسين صور WordPress الخاصة بك باستخدام مسارات عمل دُفعة آمنة وموجهة للمهام."
+
+#: templates/admin/settings-page.php:81
+msgid "Your server supports WebP and AVIF · Upload folder is writable"
+msgstr "يدعم خادمك WebP و AVIF · مجلد التحميل قابل للكتابة"
+
+#: templates/admin/settings-page.php:83
+msgid "Your server supports WebP · Upload folder is writable"
+msgstr "يدعم خادمك WebP · مجلد التحميل قابل للكتابة"
+
+#: templates/admin/settings-page.php:92
+msgid "Server image library support is missing. WebP conversion disabled."
+msgstr "دعم مكتبة صور الخادم مفقود. تم تعطيل تحويل WebP."
+
+#: templates/admin/settings-page.php:94
+msgid "Upload directory is not writable by server."
+msgstr "دليل التحميل غير قابل للكتابة بواسطة الخادم."
+
+#: templates/admin/settings-page.php:102
+msgid "View technical details"
+msgstr "عرض التفاصيل الفنية"
+
+#: templates/admin/settings-page.php:107
+msgid "WebP Engine:"
+msgstr "محرك WebP:"
+
+#: templates/admin/settings-page.php:108
+msgid "Unavailable"
+msgstr "غير متوفر"
+
+#: templates/admin/settings-page.php:111
+msgid "AVIF Engine:"
+msgstr "محرك AVIF:"
+
+#: templates/admin/settings-page.php:112
+msgid "Not supported by PHP"
+msgstr "غير مدعوم من PHP"
+
+#: templates/admin/settings-page.php:119
+msgid "Upload Directory:"
+msgstr "دليل التحميل:"
+
+#: templates/admin/settings-page.php:120
+msgid "Read-Only / Permission Denied"
+msgstr "القراءة فقط / تم رفض الإذن"
+
+#: templates/admin/settings-page.php:131
+msgid "Optimize Existing Images"
+msgstr "تحسين الصور الحالية"
+
+#: templates/admin/settings-page.php:133
+msgid "Step 1 of 3: Scan"
+msgstr "الخطوة 1 من 3: مسح"
+
+#: templates/admin/settings-page.php:140
+msgid "Scan your WordPress Media Library to analyze PNG images and calculate potential storage savings before converting."
+msgstr "افحص مكتبة وسائط WordPress الخاصة بك لتحليل صور PNG وحساب توفير مساحة التخزين المحتمل قبل التحويل."
+
+#: templates/admin/settings-page.php:149
+msgid "Nothing will be changed during the scan."
+msgstr "لن يتم تغيير أي شيء أثناء المسح."
+
+#: templates/admin/settings-page.php:161
+msgid "Eligible PNG Images"
+msgstr "صور PNG المؤهلة"
+
+#: templates/admin/settings-page.php:165
+msgid "Current Total Size"
+msgstr "الحجم الإجمالي الحالي"
+
+#: templates/admin/settings-page.php:169
+msgid "Estimated Space Savings (~45%)"
+msgstr "توفير المساحة المقدر (~45%)"
+
+#: templates/admin/settings-page.php:173
+msgid "Skipped / Unreadable Files"
+msgstr "الملفات المتخطاة / غير القابلة للقراءة"
+
+#: templates/admin/settings-page.php:196
+msgid "Preparing image queue..."
+msgstr "جاري إعداد قائمة انتظار الصور..."
+
+#: templates/admin/settings-page.php:206
+msgid "0 of 0 images processed"
+msgstr "تم معالجة 0 من 0 صورة"
+
+#: templates/admin/settings-page.php:219
+msgid "Conversion Activity Log"
+msgstr "سجل نشاط التحويل"
+
+#: templates/admin/settings-page.php:229
+msgid "Bulk Conversion Complete!"
+msgstr "اكتمل التحويل الجماعي!"
+
+#: templates/admin/settings-page.php:231
+msgid "All eligible PNG images have been converted to optimized web formats."
+msgstr "تم تحويل جميع صور PNG المؤهلة إلى تنسيقات ويب محسنة."
+
+#: templates/admin/settings-page.php:238
+msgid "Start New Scan"
+msgstr "بدء مسح جديد"
+
+#: templates/admin/settings-page.php:261
+msgid "Optimize New Uploads"
+msgstr "تحسين التحميلات الجديدة"
+
+#: templates/admin/settings-page.php:269
+msgid "Automatic optimization on upload"
+msgstr "التحسين التلقائي عند التحميل"
+
+#: templates/admin/settings-page.php:272
+msgid "Automatically converts new PNG uploads using the processing timing selected below."
+msgstr "يقوم بتحويل تحميلات PNG الجديدة تلقائيًا باستخدام توقيت المعالجة المحدد أدناه."
+
+#: templates/admin/settings-page.php:277
+msgid "Upload Conversion Timing"
+msgstr "توقيت تحويل التحميل"
+
+#: templates/admin/settings-page.php:279
+msgid "Convert immediately"
+msgstr "التحويل فورًا"
+
+#: templates/admin/settings-page.php:279
+msgid "Converts the PNG during the upload request."
+msgstr "يحول PNG أثناء طلب التحميل."
+
+#: templates/admin/settings-page.php:280
+msgid "Convert with WP-Cron"
+msgstr "التحويل باستخدام WP-Cron"
+
+#: templates/admin/settings-page.php:280
+msgid "Queues conversion after upload. The PNG stays available until WP-Cron runs."
+msgstr "يضع التحويل في قائمة الانتظار بعد التحميل. يظل ملف PNG متاحًا حتى يتم تشغيل WP-Cron."
+
+#: templates/admin/settings-page.php:288
+msgid "Target Output Format"
+msgstr "تنسيق الإخراج المستهدف"
+
+#: templates/admin/settings-page.php:296
+msgid "Automatic"
+msgstr "تلقائي"
+
+#: templates/admin/settings-page.php:297
+msgid "Recommended"
+msgstr "موصى به"
+
+#: templates/admin/settings-page.php:300
+msgid "Best compatible format for each image automatically"
+msgstr "أفضل تنسيق متوافق لكل صورة تلقائيًا"
+
+#: templates/admin/settings-page.php:313
+msgid "Excellent compatibility and smaller file sizes"
+msgstr "توافق ممتاز وأحجام ملفات أصغر"
+
+#: templates/admin/settings-page.php:325
+msgid "Unsupported on server"
+msgstr "غير مدعوم على الخادم"
+
+#: templates/admin/settings-page.php:329
+msgid "Maximum compression ratio, but requires slightly more CPU to generate"
+msgstr "أعلى نسبة ضغط، ولكنه يتطلب قوة معالجة أعلى قليلًا لتوليده"
+
+#: templates/admin/settings-page.php:341
+msgid "Compression Quality"
+msgstr "جودة الضغط"
+
+#: templates/admin/settings-page.php:342
+msgid "Quality Presets"
+msgstr "إعدادات الجودة المسبقة"
+
+#: templates/admin/settings-page.php:344
+msgid "Balanced"
+msgstr "متوازن"
+
+#: templates/admin/settings-page.php:345
+msgid "Recommended (82%)"
+msgstr "موصى به (82%)"
+
+#: templates/admin/settings-page.php:348
+msgid "Smaller files"
+msgstr "ملفات أصغر"
+
+#: templates/admin/settings-page.php:349
+msgid "High savings (65%)"
+msgstr "توفير عالٍ (65%)"
+
+#: templates/admin/settings-page.php:352
+msgid "Higher quality"
+msgstr "جودة أعلى"
+
+#: templates/admin/settings-page.php:353
+msgid "Crisp details (92%)"
+msgstr "تفاصيل حادة (92%)"
+
+#: templates/admin/settings-page.php:356
+msgid "Custom"
+msgstr "مخصص"
+
+#: templates/admin/settings-page.php:357
+msgid "Manual slider"
+msgstr "شريط تمرير يدوي"
+
+#: templates/admin/settings-page.php:362
+msgid "Custom Quality Slider"
+msgstr "شريط تمرير الجودة المخصصة"
+
+#: templates/admin/settings-page.php:368
+msgid "Estimated reduction: 35–55% · Suitable for photographs and product images."
+msgstr "التخفيض المقدر: 35-55% · مناسب للصور الفوتوغرافية وصور المنتجات."
+
+#: templates/admin/settings-page.php:378
+msgid "Safety & Backup Settings"
+msgstr "إعدادات الأمان والنسخ الاحتياطي"
+
+#: templates/admin/settings-page.php:382
+msgid "Original File Preservation"
+msgstr "الحفاظ على الملف الأصلي"
+
+#: templates/admin/settings-page.php:389
+msgid "Preserve original PNG files (Recommended)"
+msgstr "الحفاظ على ملفات PNG الأصلية (موصى به)"
+
+#: templates/admin/settings-page.php:403
+msgid "Delete originals after successful conversion"
+msgstr "حذف الملفات الأصلية بعد التحويل الناجح"
+
+#: templates/admin/settings-page.php:405
+msgid "Frees up disk space immediately. Note: Converted images cannot be reverted back to original PNG files if removed."
+msgstr "يوفر مساحة القرص فورًا. ملاحظة: لا يمكن استعادة الصور المحولة إلى ملفات PNG الأصلية إذا تم إزالتها."
+
+#: templates/admin/settings-page.php:414
+msgid "Storage Impact Notice"
+msgstr "إشعار تأثير التخزين"
+
+#: templates/admin/settings-page.php:415
+msgid "Preserving original PNGs safely retains your original source assets, but requires extra disk space until backups are cleared."
+msgstr "يحافظ الحفاظ على ملفات PNG الأصلية على أصولك الأصلية بأمان، ولكن يتطلب مساحة إضافية على القرص حتى يتم مسح النسخ الاحتياطية."
+
+#: templates/admin/settings-page.php:423
+msgid "Backup Deletion Timing"
+msgstr "توقيت حذف النسخة الاحتياطية"
+
+#: templates/admin/settings-page.php:425
+msgid "Delete immediately"
+msgstr "حذف فورًا"
+
+#: templates/admin/settings-page.php:425
+msgid "Deletes matching backups as soon as the Media Library item is deleted."
+msgstr "يحذف النسخ الاحتياطية المطابقة بمجرد حذف عنصر مكتبة الوسائط."
+
+#: templates/admin/settings-page.php:426
+msgid "Delete with WP-Cron"
+msgstr "الحذف باستخدام WP-Cron"
+
+#: templates/admin/settings-page.php:426
+msgid "Queues matching backup files for background deletion."
+msgstr "يضع ملفات النسخ الاحتياطي المطابقة في قائمة الانتظار للحذف في الخلفية."
+
+#: templates/admin/settings-page.php:438
+msgid "You have unsaved changes"
+msgstr "لديك تغييرات غير محفوظة"
+
+#: templates/admin/settings-page.php:442
+msgid "Discard changes"
+msgstr "إلغاء التغييرات"
+
+#: templates/admin/settings-page.php:445
+msgid "Save changes"
+msgstr "حفظ التغييرات"

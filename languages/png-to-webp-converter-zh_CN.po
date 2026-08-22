@@ -1,0 +1,500 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-08T03:08:41+00:00\n"
+"PO-Revision-Date: 2026-08-08T03:08:41+00:00\n"
+"Language: zh_CN\n"
+
+#: src/Admin/BulkConverter.php:34
+msgid "Permission denied."
+msgstr "拒绝访问。"
+
+#. Plugin URI of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "https://wordpress.org/plugins/png-to-webp-converter"
+msgstr "https://wordpress.org/plugins/png-to-webp-converter"
+
+#. Author of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "Pluximo"
+msgstr "Pluximo"
+
+#: src/Admin/AdminSettings.php:114
+msgid "Scanning Media Library for PNG images..."
+msgstr "正在媒体库中扫描 PNG 图像..."
+
+#: src/Admin/AdminSettings.php:115
+msgid "Scanning..."
+msgstr "正在扫描..."
+
+#. translators: %d: Number of PNG images found.
+#: src/Admin/AdminSettings.php:120
+#, php-format
+msgid "Found %d PNG images to convert."
+msgstr "找到 %d 张需要转换的 PNG 图像。"
+
+#. translators: 1: Current image index, 2: Total image count.
+#: src/Admin/AdminSettings.php:122
+#, php-format
+msgid "Converting image %1$d of %2$d..."
+msgstr "正在转换第 %1$d / %2$d 张图像..."
+
+#: src/Admin/AdminSettings.php:127
+msgid "Bulk conversion completed successfully!"
+msgstr "批量转换成功完成！"
+
+#. translators: 1: Processed count, 2: Total count, 3: Image ID, 4: Image filename, 5: Saved size.
+#: src/Admin/AdminSettings.php:134
+#, php-format
+msgid "[%1$d/%2$d] Converted #%3$d (%4$s) - Saved %5$s"
+msgstr "[%1$d/%2$d] 已转换 #%3$d（%4$s） - 节省了 %5$s"
+
+#. translators: 1: Processed count, 2: Total count, 3: Image ID, 4: Error message.
+#: src/Admin/AdminSettings.php:136
+#, php-format
+msgid "[%1$d/%2$d] Error #%3$d: %4$s"
+msgstr "[%1$d/%2$d] 错误 #%3$d：%4$s"
+
+#. translators: 1: Processed count, 2: Total count, 3: Image ID.
+#: src/Admin/AdminSettings.php:138
+#, php-format
+msgid "[%1$d/%2$d] AJAX error processing #%3$d"
+msgstr "[%1$d/%2$d] 处理 #%3$d 时发生 AJAX 错误"
+
+#: src/Admin/AdminSettings.php:139
+msgid "An error occurred during conversion."
+msgstr "转换过程中发生错误。"
+
+#: src/Admin/BulkConverter.php:105
+msgid "Invalid attachment ID."
+msgstr "无效的附件 ID。"
+
+#. translators: %d: attachment ID
+#: src/Admin/BulkConverter.php:112
+#, php-format
+msgid "Attachment #%d file not found."
+msgstr "未找到附件 #%d 的文件。"
+
+#: src/Admin/BulkConverter.php:130
+msgid "Conversion failed."
+msgstr "转换失败。"
+
+#. translators: %s: Upper-case target format name, e.g. WEBP or AVIF
+#: src/ConverterEngine.php:94
+#, php-format
+msgid "Failed to convert PNG to %s."
+msgstr "无法将 PNG 转换为 %s。"
+
+#: src/ConverterEngine.php:125
+msgid "Source PNG file does not exist."
+msgstr "源 PNG 文件不存在。"
+
+#: src/ConverterEngine.php:128
+msgid "File is not a PNG image."
+msgstr "文件不是 PNG 图像。"
+
+#: src/Drivers/AvifDriver.php:66
+#: src/Drivers/WebpDriver.php:39
+msgid "GD Graphics Library"
+msgstr "GD 图形库"
+
+#: src/Drivers/AvifDriver.php:70
+#: src/Drivers/WebpDriver.php:43
+msgid "ImageMagick (Imagick)"
+msgstr "ImageMagick (Imagick)"
+
+#: src/Drivers/AvifDriver.php:73
+#: src/Drivers/WebpDriver.php:46
+msgid "WordPress WP_Image_Editor"
+msgstr "WordPress WP_Image_Editor"
+
+#: templates/admin/settings-page.php:64
+msgid "Images Converted"
+msgstr "已转换图像"
+
+#: templates/admin/settings-page.php:68
+msgid "Space Saved"
+msgstr "已节省空间"
+
+#: templates/admin/settings-page.php:115
+msgid "PHP Version:"
+msgstr "PHP 版本："
+
+#: templates/admin/settings-page.php:120
+msgid "Writable"
+msgstr "可写"
+
+#. translators: %s: Backup folder path
+#: templates/admin/settings-page.php:393
+#, php-format
+msgid "Saves a backup copy of original PNG files in %s before converting."
+msgstr "在转换前将原始 PNG 文件的备份副本保存到 %s 中。"
+
+#: templates/admin/settings-page.php:185
+msgid "Start Bulk Conversion"
+msgstr "开始批量转换"
+
+#. Plugin Name of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "Auto PNG to WebP & AVIF Converter"
+msgstr "PNG 自动转 WebP 和 AVIF 转换器"
+
+#. Description of the plugin
+#: pluximo-png-to-webp-converter.php
+msgid "Automatically convert PNG images to WebP or AVIF, preserve transparency, optimize quality, keep optional backups, and bulk-convert existing Media Library images."
+msgstr "自动将 PNG 图像转换为 WebP 或 AVIF，保留透明度、优化质量、按需保留备份，并批量转换媒体库中的现有图像。"
+
+#: src/Admin/AdminSettings.php:57
+#: templates/admin/settings-page.php:53
+msgid "PNG to WebP & AVIF Converter"
+msgstr "PNG 转 WebP 和 AVIF 转换器"
+
+#: src/Admin/AdminSettings.php:58
+msgid "PNG Optimizer"
+msgstr "PNG 优化器"
+
+#: src/Admin/AdminSettings.php:116
+#: templates/admin/settings-page.php:145
+msgid "Scan Media Library"
+msgstr "扫描媒体库"
+
+#: src/Admin/AdminSettings.php:117
+#: templates/admin/settings-page.php:188
+msgid "Re-scan Library"
+msgstr "重新扫描媒体库"
+
+#: src/Admin/AdminSettings.php:118
+msgid "No unconverted PNG images found in Media Library."
+msgstr "媒体库中未找到未转换的 PNG 图像。"
+
+#. translators: 1: Processed count, 2: Total count, 3: Percentage completed.
+#: src/Admin/AdminSettings.php:124
+#, php-format
+msgid "%1$d of %2$d images processed (%3$d%%)"
+msgstr "已处理 %1$d / %2$d 张图像 (%3$d%%)"
+
+#: src/Admin/AdminSettings.php:125
+msgid "Conversion paused. Click Resume to continue."
+msgstr "转换已暂停。点击恢复以继续。"
+
+#: src/Admin/AdminSettings.php:126
+msgid "Conversion cancelled by user."
+msgstr "用户已取消转换。"
+
+#: src/Admin/AdminSettings.php:128
+msgid "Bulk Conversion Complete"
+msgstr "批量转换完成"
+
+#: src/Admin/AdminSettings.php:129
+#: templates/admin/settings-page.php:211
+msgid "Pause"
+msgstr "暂停"
+
+#: src/Admin/AdminSettings.php:130
+msgid "Resume"
+msgstr "恢复"
+
+#: src/Admin/AdminSettings.php:131
+#: templates/admin/settings-page.php:214
+msgid "Cancel"
+msgstr "取消"
+
+#: src/Admin/AdminSettings.php:132
+#: templates/admin/settings-page.php:242
+msgid "Download Error Log"
+msgstr "下载错误日志"
+
+#: src/Admin/AdminSettings.php:140
+msgid "You have unsaved changes."
+msgstr "您有未保存的更改。"
+
+#: src/Admin/AdminSettings.php:141
+#: templates/admin/settings-page.php:44
+msgid "Settings saved successfully."
+msgstr "设置已成功保存。"
+
+#: templates/admin/settings-page.php:56
+msgid "Server Ready"
+msgstr "服务器已就绪"
+
+#: templates/admin/settings-page.php:56
+msgid "Attention Required"
+msgstr "需要注意"
+
+#: templates/admin/settings-page.php:59
+msgid "Optimize your WordPress images with safe, task-oriented batch workflows."
+msgstr "通过安全、面向任务的批量工作流程优化您的 WordPress 图像。"
+
+#: templates/admin/settings-page.php:81
+msgid "Your server supports WebP and AVIF · Upload folder is writable"
+msgstr "您的服务器支持 WebP 和 AVIF · 上传文件夹可写"
+
+#: templates/admin/settings-page.php:83
+msgid "Your server supports WebP · Upload folder is writable"
+msgstr "您的服务器支持 WebP · 上传文件夹可写"
+
+#: templates/admin/settings-page.php:92
+msgid "Server image library support is missing. WebP conversion disabled."
+msgstr "缺少服务器图像库支持。已禁用 WebP 转换。"
+
+#: templates/admin/settings-page.php:94
+msgid "Upload directory is not writable by server."
+msgstr "上传目录不可被服务器写入。"
+
+#: templates/admin/settings-page.php:102
+msgid "View technical details"
+msgstr "查看技术细节"
+
+#: templates/admin/settings-page.php:107
+msgid "WebP Engine:"
+msgstr "WebP 引擎："
+
+#: templates/admin/settings-page.php:108
+msgid "Unavailable"
+msgstr "不可用"
+
+#: templates/admin/settings-page.php:111
+msgid "AVIF Engine:"
+msgstr "AVIF 引擎："
+
+#: templates/admin/settings-page.php:112
+msgid "Not supported by PHP"
+msgstr "PHP 不支持"
+
+#: templates/admin/settings-page.php:119
+msgid "Upload Directory:"
+msgstr "上传目录："
+
+#: templates/admin/settings-page.php:120
+msgid "Read-Only / Permission Denied"
+msgstr "只读 / 权限被拒绝"
+
+#: templates/admin/settings-page.php:131
+msgid "Optimize Existing Images"
+msgstr "优化现有的图像"
+
+#: templates/admin/settings-page.php:133
+msgid "Step 1 of 3: Scan"
+msgstr "步骤 1/3：扫描"
+
+#: templates/admin/settings-page.php:140
+msgid "Scan your WordPress Media Library to analyze PNG images and calculate potential storage savings before converting."
+msgstr "扫描您的 WordPress 媒体库，分析 PNG 图像并在转换前计算潜在的存储空间节省。"
+
+#: templates/admin/settings-page.php:149
+msgid "Nothing will be changed during the scan."
+msgstr "扫描期间不会更改任何内容。"
+
+#: templates/admin/settings-page.php:161
+msgid "Eligible PNG Images"
+msgstr "符合条件的 PNG 图像"
+
+#: templates/admin/settings-page.php:165
+msgid "Current Total Size"
+msgstr "当前总大小"
+
+#: templates/admin/settings-page.php:169
+msgid "Estimated Space Savings (~45%)"
+msgstr "预计可节省空间 (~45%)"
+
+#: templates/admin/settings-page.php:173
+msgid "Skipped / Unreadable Files"
+msgstr "已跳过 / 无法读取的文件"
+
+#: templates/admin/settings-page.php:196
+msgid "Preparing image queue..."
+msgstr "正在准备图像队列..."
+
+#: templates/admin/settings-page.php:206
+msgid "0 of 0 images processed"
+msgstr "已处理 0 / 0 张图像"
+
+#: templates/admin/settings-page.php:219
+msgid "Conversion Activity Log"
+msgstr "转换活动日志"
+
+#: templates/admin/settings-page.php:229
+msgid "Bulk Conversion Complete!"
+msgstr "批量转换完成！"
+
+#: templates/admin/settings-page.php:231
+msgid "All eligible PNG images have been converted to optimized web formats."
+msgstr "所有符合条件的 PNG 图像已成功转换为优化的 Web 格式。"
+
+#: templates/admin/settings-page.php:238
+msgid "Start New Scan"
+msgstr "开始新扫描"
+
+#: templates/admin/settings-page.php:261
+msgid "Optimize New Uploads"
+msgstr "优化新上传"
+
+#: templates/admin/settings-page.php:269
+msgid "Automatic optimization on upload"
+msgstr "上传时自动优化"
+
+#: templates/admin/settings-page.php:272
+msgid "Automatically converts new PNG uploads using the processing timing selected below."
+msgstr "使用下方选择的处理时机自动转换新上传的 PNG 图像。"
+
+#: templates/admin/settings-page.php:277
+msgid "Upload Conversion Timing"
+msgstr "上传转换时机"
+
+#: templates/admin/settings-page.php:279
+msgid "Convert immediately"
+msgstr "立即转换"
+
+#: templates/admin/settings-page.php:279
+msgid "Converts the PNG during the upload request."
+msgstr "在上传过程中直接转换 PNG。"
+
+#: templates/admin/settings-page.php:280
+msgid "Convert with WP-Cron"
+msgstr "使用 WP-Cron 计划转换"
+
+#: templates/admin/settings-page.php:280
+msgid "Queues conversion after upload. The PNG stays available until WP-Cron runs."
+msgstr "上传后排队等待转换。在 WP-Cron 运行之前，原始 PNG 保持可用状态。"
+
+#: templates/admin/settings-page.php:288
+msgid "Target Output Format"
+msgstr "目标输出格式"
+
+#: templates/admin/settings-page.php:296
+msgid "Automatic"
+msgstr "自动"
+
+#: templates/admin/settings-page.php:297
+msgid "Recommended"
+msgstr "推荐"
+
+#: templates/admin/settings-page.php:300
+msgid "Best compatible format for each image automatically"
+msgstr "自动为每张图像选择兼容性最佳的格式"
+
+#: templates/admin/settings-page.php:313
+msgid "Excellent compatibility and smaller file sizes"
+msgstr "极佳的兼容性和更小的文件体积"
+
+#: templates/admin/settings-page.php:325
+msgid "Unsupported on server"
+msgstr "服务器不支持"
+
+#: templates/admin/settings-page.php:329
+msgid "Maximum compression ratio, but requires slightly more CPU to generate"
+msgstr "最高压缩比，但生成时需要稍微更多的 CPU 算力"
+
+#: templates/admin/settings-page.php:341
+msgid "Compression Quality"
+msgstr "压缩质量"
+
+#: templates/admin/settings-page.php:342
+msgid "Quality Presets"
+msgstr "预设质量"
+
+#: templates/admin/settings-page.php:344
+msgid "Balanced"
+msgstr "平衡"
+
+#: templates/admin/settings-page.php:345
+msgid "Recommended (82%)"
+msgstr "推荐 (82%)"
+
+#: templates/admin/settings-page.php:348
+msgid "Smaller files"
+msgstr "较小体积"
+
+#: templates/admin/settings-page.php:349
+msgid "High savings (65%)"
+msgstr "高压缩率 (65%)"
+
+#: templates/admin/settings-page.php:352
+msgid "Higher quality"
+msgstr "更高画质"
+
+#: templates/admin/settings-page.php:353
+msgid "Crisp details (92%)"
+msgstr "清晰细节 (92%)"
+
+#: templates/admin/settings-page.php:356
+msgid "Custom"
+msgstr "自定义"
+
+#: templates/admin/settings-page.php:357
+msgid "Manual slider"
+msgstr "手动滑块"
+
+#: templates/admin/settings-page.php:362
+msgid "Custom Quality Slider"
+msgstr "自定义质量滑块"
+
+#: templates/admin/settings-page.php:368
+msgid "Estimated reduction: 35–55% · Suitable for photographs and product images."
+msgstr "预计缩小：35–55% · 适用于照片和产品图片。"
+
+#: templates/admin/settings-page.php:378
+msgid "Safety & Backup Settings"
+msgstr "安全与备份设置"
+
+#: templates/admin/settings-page.php:382
+msgid "Original File Preservation"
+msgstr "保留原始文件"
+
+#: templates/admin/settings-page.php:389
+msgid "Preserve original PNG files (Recommended)"
+msgstr "保留原始 PNG 文件 (推荐)"
+
+#: templates/admin/settings-page.php:403
+msgid "Delete originals after successful conversion"
+msgstr "转换成功后删除原始文件"
+
+#: templates/admin/settings-page.php:405
+msgid "Frees up disk space immediately. Note: Converted images cannot be reverted back to original PNG files if removed."
+msgstr "立即释放磁盘空间。注意：如果删除，转换后的图像无法恢复为原始 PNG 文件。"
+
+#: templates/admin/settings-page.php:414
+msgid "Storage Impact Notice"
+msgstr "存储空间影响提示"
+
+#: templates/admin/settings-page.php:415
+msgid "Preserving original PNGs safely retains your original source assets, but requires extra disk space until backups are cleared."
+msgstr "保留原始 PNG 可安全保存您的原始资源，但在清除备份之前需要额外的磁盘空间。"
+
+#: templates/admin/settings-page.php:423
+msgid "Backup Deletion Timing"
+msgstr "备份删除时机"
+
+#: templates/admin/settings-page.php:425
+msgid "Delete immediately"
+msgstr "立即删除"
+
+#: templates/admin/settings-page.php:425
+msgid "Deletes matching backups as soon as the Media Library item is deleted."
+msgstr "一旦从媒体库中删除对应项目，立即删除关联的备份。"
+
+#: templates/admin/settings-page.php:426
+msgid "Delete with WP-Cron"
+msgstr "使用 WP-Cron 计划删除"
+
+#: templates/admin/settings-page.php:426
+msgid "Queues matching backup files for background deletion."
+msgstr "在后台将关联的备份文件排队等待删除。"
+
+#: templates/admin/settings-page.php:438
+msgid "You have unsaved changes"
+msgstr "您有未保存的更改"
+
+#: templates/admin/settings-page.php:442
+msgid "Discard changes"
+msgstr "放弃更改"
+
+#: templates/admin/settings-page.php:445
+msgid "Save changes"
+msgstr "保存更改"

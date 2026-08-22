@@ -10,3 +10,6 @@
 [submodule "modules/admin-shell"]
 	path = modules/admin-shell
 	url = git@github.com:kabirkhyrul/pluximo-admin-shell.git
+[submodule "modules/logging"]
+	path = modules/logging
+	url = git@github.com:kabirkhyrul/pluximo-logging.git
