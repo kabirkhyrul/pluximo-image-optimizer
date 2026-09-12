@@ -33,7 +33,7 @@ final class Plugin extends AbstractPluginDefinition {
 				'name'                    => 'Image Optimizer',
 				'version'                 => '1.0.0',
 				'plugin_file'             => dirname( __DIR__ ) . '/pluximo-image-optimizer.php',
-				'admin_page_slug'         => 'png-to-webp-converter',
+				'admin_page_slug'         => 'pluximo-image-optimizer',
 				'support_context'         => array( 'channel' => 'wordpress' ),
 				'enabled_shared_features' => array( 'admin-shell', 'ecosystem', 'support' ),
 			)

@@ -54,12 +54,6 @@ add_action(
 			false,
 			dirname( plugin_basename( __FILE__ ) ) . '/languages'
 		);
-		load_plugin_textdomain(
-			'png-to-webp-converter',
-			false,
-			dirname( plugin_basename( __FILE__ ) ) . '/languages'
-		);
-
 		$plugin = new Plugin();
 		$plugin->boot();
 	}

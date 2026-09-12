@@ -20,7 +20,7 @@ Pluximo\Foundation\Autoloader::register(
 		'Pluximo\\ImageOptimizer\\' => __DIR__ . '/src/',
 		'Pluximo\\Foundation\\'     => __DIR__ . '/modules/foundation/src/',
 		'Pluximo\\AdminShell\\'     => __DIR__ . '/modules/admin-shell/src/',
-		'Pluximo\\Ecosystem\\'      => __DIR__ . '/modules/ecosystem/src/',
+		'Pluximo\\Ecosystem\\'      => __DIR__ . '/modules/ecosystem/backend/',
 		'Pluximo\\Support\\'        => __DIR__ . '/modules/support/src/',
 		'Pluximo\\Logging\\'        => __DIR__ . '/modules/logging/src/',
 	)

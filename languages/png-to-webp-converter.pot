@@ -12,25 +12,25 @@ msgstr ""
 "POT-Creation-Date: 2026-08-08T16:57:18+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: png-to-webp-converter\n"
+"X-Domain: pluximo-image-optimizer\n"
 
 #. Plugin Name of the plugin
-#: pluximo-png-to-webp-converter.php
+#: pluximo-pluximo-image-optimizer.php
 msgid "Auto PNG to WebP & AVIF Converter"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: pluximo-png-to-webp-converter.php
-msgid "https://wordpress.org/plugins/png-to-webp-converter"
+#: pluximo-pluximo-image-optimizer.php
+msgid "https://wordpress.org/plugins/pluximo-image-optimizer"
 msgstr ""
 
 #. Description of the plugin
-#: pluximo-png-to-webp-converter.php
+#: pluximo-pluximo-image-optimizer.php
 msgid "Automatically convert PNG images to WebP or AVIF, preserve transparency, optimize quality, keep optional backups, and bulk-convert existing Media Library images."
 msgstr ""
 
 #. Author of the plugin
-#: pluximo-png-to-webp-converter.php
+#: pluximo-pluximo-image-optimizer.php
 msgid "Pluximo"
 msgstr ""
 

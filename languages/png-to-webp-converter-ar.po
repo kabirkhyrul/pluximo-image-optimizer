@@ -16,12 +16,12 @@ msgid "Permission denied."
 msgstr "تم رفض الإذن."
 
 #. Plugin URI of the plugin
-#: pluximo-png-to-webp-converter.php
-msgid "https://wordpress.org/plugins/png-to-webp-converter"
-msgstr "https://wordpress.org/plugins/png-to-webp-converter"
+#: pluximo-pluximo-image-optimizer.php
+msgid "https://wordpress.org/plugins/pluximo-image-optimizer"
+msgstr "https://wordpress.org/plugins/pluximo-image-optimizer"
 
 #. Author of the plugin
-#: pluximo-png-to-webp-converter.php
+#: pluximo-pluximo-image-optimizer.php
 msgid "Pluximo"
 msgstr "Pluximo"
 
@@ -141,12 +141,12 @@ msgid "Start Bulk Conversion"
 msgstr "بدء التحويل الجماعي"
 
 #. Plugin Name of the plugin
-#: pluximo-png-to-webp-converter.php
+#: pluximo-pluximo-image-optimizer.php
 msgid "Auto PNG to WebP & AVIF Converter"
 msgstr "المحوّل التلقائي من PNG إلى WebP وAVIF"
 
 #. Description of the plugin
-#: pluximo-png-to-webp-converter.php
+#: pluximo-pluximo-image-optimizer.php
 msgid "Automatically convert PNG images to WebP or AVIF, preserve transparency, optimize quality, keep optional backups, and bulk-convert existing Media Library images."
 msgstr "حوّل صور PNG تلقائيًا إلى WebP أو AVIF، مع الحفاظ على الشفافية وتحسين الجودة والاحتفاظ بنسخ احتياطية اختيارية وتحويل صور مكتبة الوسائط الحالية دفعة واحدة."
 

@@ -13,3 +13,6 @@
 [submodule "modules/logging"]
 	path = modules/logging
 	url = git@github.com:kabirkhyrul/pluximo-logging.git
+[submodule "modules/asset-manager"]
+	path = modules/asset-manager
+	url = git@github.com:kabirkhyrul/pluximo-asset-manager.git

@@ -56,7 +56,7 @@ class AdminSettings {
 		$this->admin_menu->register_subpage(
 			__( 'PNG to WebP & AVIF Converter', 'pluximo-image-optimizer' ),
 			__( 'PNG Optimizer', 'pluximo-image-optimizer' ),
-			'png-to-webp-converter',
+			'pluximo-image-optimizer',
 			array( $this, 'render_settings_page' )
 		);
 	}
@@ -83,7 +83,7 @@ class AdminSettings {
 	 * @return void
 	 */
 	public function enqueue_admin_assets( string $hook ): void {
-		if ( ! in_array( $hook, array( 'toplevel_page_pluximo', 'toplevel_page_pluximo-network', 'settings_page_png-to-webp-converter', 'pluximo_page_png-to-webp-converter' ), true ) ) {
+		if ( ! in_array( $hook, array( 'toplevel_page_pluximo', 'toplevel_page_pluximo-network', 'settings_page_pluximo-image-optimizer', 'pluximo_page_pluximo-image-optimizer' ), true ) ) {
 			return;
 		}
 
