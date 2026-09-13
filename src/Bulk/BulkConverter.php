@@ -114,7 +114,7 @@ final class BulkConverter {
 		}
 
 		$dest_file = (string) preg_replace( '/\.png$/i', '.' . $target_format, $file_path );
-		$result    = ConverterEngine::convert_png_to_webp( $file_path, $dest_file, null, $target_format );
+		$result    = ConverterEngine::convert_image( $file_path, $dest_file, null, $target_format );
 
 		if ( ! isset( $result['success'] ) || true !== $result['success'] ) {
 			$error = isset( $result['error'] ) ? (string) $result['error'] : __( 'Conversion failed.', 'pluximo-image-optimizer' );

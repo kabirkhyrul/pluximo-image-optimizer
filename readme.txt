@@ -20,7 +20,7 @@ Pluximo Image Optimizer optimizes WordPress images by converting PNG files into 
 * **Automatic Upload Conversion:** Instantly converts newly uploaded PNG images into optimized WebP or AVIF files.
 * **Bulk Converter:** Scan and convert existing PNG images in your WordPress Media Library with live progress logs.
 * **Quality & Transparency Controls:** Set compression quality from 1-100 while preserving alpha transparency.
-* **Backup Option:** Optionally keep original PNG backups in `wp-content/uploads/png-to-webp-backups/`.
+* **Backup Option:** Optionally keep original PNG backups in `wp-content/uploads/pluximo-image-optimizer-backups/`.
 * **Multi-driver Support:** Supports GD Library, ImageMagick (Imagick), and WP_Image_Editor fallback engines.
 * **Multi-lingual Support:** Fully translated into English, Mandarin Chinese, Spanish, Hindi, French, and Arabic.
 

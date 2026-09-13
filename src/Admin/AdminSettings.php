@@ -202,34 +202,6 @@ class AdminSettings {
 				'avifEngineName'  => ConverterEngine::get_engine_name( 'avif' ),
 				'phpVersion'      => PHP_VERSION,
 			),
-			'i18n'     => array(
-				'scanning'            => __( 'Scanning Media Library for PNG images...', 'pluximo-image-optimizer' ),
-				'scanning_btn'        => __( 'Scanning...', 'pluximo-image-optimizer' ),
-				'scan_btn'            => __( 'Scan Media Library', 'pluximo-image-optimizer' ),
-				'rescan_btn'          => __( 'Re-scan Library', 'pluximo-image-optimizer' ),
-				'no_pngs'             => __( 'No unconverted PNG images found in Media Library.', 'pluximo-image-optimizer' ),
-				/* translators: %d: Number of PNG images found. */
-				'found_pngs'          => __( 'Found %d PNG images to convert.', 'pluximo-image-optimizer' ),
-				/* translators: 1: Current image index, 2: Total image count. */
-				'processing'          => __( 'Converting image %1$d of %2$d...', 'pluximo-image-optimizer' ),
-				/* translators: 1: Processed count, 2: Total count, 3: Percentage completed. */
-				'processed_status'    => __( '%1$d of %2$d images processed (%3$d%%)', 'pluximo-image-optimizer' ),
-				'paused_status'       => __( 'Conversion paused. Click Resume to continue.', 'pluximo-image-optimizer' ),
-				'cancelled_status'    => __( 'Conversion cancelled by user.', 'pluximo-image-optimizer' ),
-				'complete'            => __( 'Bulk conversion completed successfully!', 'pluximo-image-optimizer' ),
-				'complete_btn'        => __( 'Bulk Conversion Complete', 'pluximo-image-optimizer' ),
-				'pause_btn'           => __( 'Pause', 'pluximo-image-optimizer' ),
-				'resume_btn'          => __( 'Resume', 'pluximo-image-optimizer' ),
-				'cancel_btn'          => __( 'Cancel', 'pluximo-image-optimizer' ),
-				'download_log_btn'    => __( 'Download Error Log', 'pluximo-image-optimizer' ),
-				/* translators: 1: Processed count, 2: Total count, 3: Image ID, 4: Image filename, 5: Saved size. */
-				'converted_msg'       => __( '[%1$d/%2$d] Converted #%3$d (%4$s) - Saved %5$s', 'pluximo-image-optimizer' ),
-				/* translators: 1: Processed count, 2: Total count, 3: Image ID, 4: Error message. */
-				'error_item_msg'      => __( '[%1$d/%2$d] Error #%3$d: %4$s', 'pluximo-image-optimizer' ),
-				'error'               => __( 'An error occurred during conversion.', 'pluximo-image-optimizer' ),
-				'unsaved_changes_msg' => __( 'You have unsaved changes.', 'pluximo-image-optimizer' ),
-				'saved_success_msg'   => __( 'Settings saved successfully.', 'pluximo-image-optimizer' ),
-			),
 		);
 	}
 

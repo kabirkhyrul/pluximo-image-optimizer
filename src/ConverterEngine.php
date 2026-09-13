@@ -68,7 +68,7 @@ class ConverterEngine {
 	 *
 	 * @return array Result payload with status, file paths, format, and size delta.
 	 */
-	public static function convert_png_to_webp( string $source_path, ?string $dest_path = null, ?int $quality = null, ?string $target_format = null ): array {
+	public static function convert_image( string $source_path, ?string $dest_path = null, ?int $quality = null, ?string $target_format = null ): array {
 		$validation_error = self::validate_source_file( $source_path );
 		if ( null !== $validation_error ) {
 			return array(

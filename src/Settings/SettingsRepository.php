@@ -35,36 +35,17 @@ final class SettingsRepository {
 	public const TOTAL_COUNT_OPTION = 'pluximo_image_optimizer_total_converted_count';
 
 	/**
-	 * Interim option name used before the prefix rename.
-	 */
-	private const PREVIOUS_OPTION_NAME = 'png2webp_settings';
-
-	/**
 	 * Default settings.
 	 *
 	 * @var array<string, string|int>
 	 */
 	private const DEFAULTS = array(
-		'auto_convert'         => '1',
+		'auto_convert'         => 1,
 		'conversion_timing'    => 'immediate',
 		'output_format'        => 'auto',
 		'quality'              => 82,
-		'keep_backup'          => '1',
+		'keep_backup'          => 1,
 		'backup_delete_timing' => 'immediate',
-	);
-
-	/**
-	 * Legacy per-key option map: setting key => pre-rename option name.
-	 *
-	 * @var array<string, string>
-	 */
-	private const LEGACY_MAP = array(
-		'auto_convert'         => 'png2webp_auto_convert',
-		'conversion_timing'    => 'png2webp_conversion_timing',
-		'output_format'        => 'png2webp_output_format',
-		'quality'              => 'png2webp_quality',
-		'keep_backup'          => 'png2webp_keep_backup',
-		'backup_delete_timing' => 'png2webp_backup_delete_timing',
 	);
 
 	/**
@@ -164,20 +145,17 @@ final class SettingsRepository {
 	}
 
 	/**
-	 * Seed the single option on activation and migrate pre-rename options.
+	 * Seed the single option on activation.
 	 *
 	 * @return void
 	 */
 	public function install(): void {
 		$this->cache = null;
 
-		$this->resolve_stored_settings();
-
 		if ( ! is_array( get_option( self::OPTION_NAME, null ) ) ) {
 			update_option( self::OPTION_NAME, self::DEFAULTS, true );
 		}
 
-		$this->migrate_stats_options();
 		$this->cache = null;
 	}
 
@@ -218,73 +196,14 @@ final class SettingsRepository {
 	}
 
 	/**
-	 * Read the stored settings, migrating any pre-rename option shape once.
+	 * Read the stored settings.
 	 *
 	 * @return array<string, mixed>
 	 */
 	private function resolve_stored_settings(): array {
 		$stored = get_option( self::OPTION_NAME, null );
-		if ( is_array( $stored ) ) {
-			return $stored;
-		}
 
-		$previous = get_option( self::PREVIOUS_OPTION_NAME, null );
-		if ( is_array( $previous ) ) {
-			$clean = $this->sanitize( $previous );
-			delete_option( self::PREVIOUS_OPTION_NAME );
-
-			update_option( self::OPTION_NAME, $clean, true );
-
-			return $clean;
-		}
-
-		$settings = self::DEFAULTS;
-		$found    = false;
-
-		foreach ( self::LEGACY_MAP as $key => $option ) {
-			$value = get_option( $option, null );
-			if ( null !== $value ) {
-				$settings[ $key ] = $value;
-				$found            = true;
-			}
-		}
-
-		if ( ! $found ) {
-			return self::DEFAULTS;
-		}
-
-		$clean = $this->sanitize( $settings );
-
-		foreach ( self::LEGACY_MAP as $option ) {
-			delete_option( $option );
-		}
-
-		update_option( self::OPTION_NAME, $clean, true );
-
-		return $clean;
-	}
-
-	/**
-	 * Move pre-rename cumulative counters onto the new option names.
-	 *
-	 * @return void
-	 */
-	private function migrate_stats_options(): void {
-		$map = array(
-			self::TOTAL_SAVED_OPTION => 'png2webp_total_saved_bytes',
-			self::TOTAL_COUNT_OPTION => 'png2webp_total_converted_count',
-		);
-
-		foreach ( $map as $new => $old ) {
-			$legacy = get_option( $old, null );
-
-			if ( null === $legacy || false !== get_option( $new, false ) ) {
-				continue;
-			}
-
-			update_option( $new, $legacy, false );
-			delete_option( $old );
-		}
+		return is_array( $stored ) ? $stored : self::DEFAULTS;
 	}
 
 	/**

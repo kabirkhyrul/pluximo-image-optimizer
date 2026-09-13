@@ -108,7 +108,7 @@ class UploadHandler {
 		}
 
 		$dest_file = (string) preg_replace( '/\.png$/i', '.' . $target_format, $file_path );
-		$result    = ConverterEngine::convert_png_to_webp( $file_path, $dest_file, null, $target_format );
+		$result    = ConverterEngine::convert_image( $file_path, $dest_file, null, $target_format );
 		if ( true !== ( $result['success'] ?? false ) || ! file_exists( $dest_file ) ) {
 			return;
 		}
@@ -130,7 +130,7 @@ class UploadHandler {
 		$source_file = (string) $upload['file'];
 		$dest_file   = (string) preg_replace( '/\.png$/i', '.' . $target_format, $source_file );
 
-		$result = ConverterEngine::convert_png_to_webp( $source_file, $dest_file, null, $target_format );
+		$result = ConverterEngine::convert_image( $source_file, $dest_file, null, $target_format );
 		if ( true !== ( $result['success'] ?? false ) || ! file_exists( $dest_file ) ) {
 			return $upload;
 		}

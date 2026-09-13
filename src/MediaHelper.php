@@ -102,7 +102,7 @@ class MediaHelper {
 	 */
 	private static function backup_original_png( string $source_path ): void {
 		$upload_dir = wp_upload_dir();
-		$backup_dir = trailingslashit( $upload_dir['basedir'] ) . 'png-to-webp-backups/';
+		$backup_dir = trailingslashit( $upload_dir['basedir'] ) . 'pluximo-image-optimizer-backups/';
 		if ( ! file_exists( $backup_dir ) ) {
 			wp_mkdir_p( $backup_dir );
 		}
@@ -124,7 +124,7 @@ class MediaHelper {
 		}
 
 		$upload_dir = wp_upload_dir();
-		$backup_dir = trailingslashit( $upload_dir['basedir'] ) . 'png-to-webp-backups/';
+		$backup_dir = trailingslashit( $upload_dir['basedir'] ) . 'pluximo-image-optimizer-backups/';
 		if ( ! is_dir( $backup_dir ) ) {
 			return;
 		}
@@ -170,7 +170,7 @@ class MediaHelper {
 	 */
 	public static function delete_backup_files( array $backup_files ): void {
 		$upload_dir = wp_upload_dir();
-		$backup_dir = str_replace( '\\', '/', trailingslashit( $upload_dir['basedir'] ) . 'png-to-webp-backups/' );
+		$backup_dir = str_replace( '\\', '/', trailingslashit( $upload_dir['basedir'] ) . 'pluximo-image-optimizer-backups/' );
 
 		foreach ( $backup_files as $backup_file ) {
 			$backup_file = str_replace( '\\', '/', (string) $backup_file );

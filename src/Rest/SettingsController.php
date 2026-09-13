@@ -185,8 +185,8 @@ final class SettingsController {
 		return array(
 			'auto_convert'         => array(
 				'description' => __( 'Automatically convert new PNG uploads.', 'pluximo-image-optimizer' ),
-				'type'        => 'string',
-				'enum'        => array( '0', '1' ),
+				'type'        => 'integer',
+				'enum'        => array( 0, 1 ),
 			),
 			'conversion_timing'    => array(
 				'description' => __( 'When upload conversions run.', 'pluximo-image-optimizer' ),
@@ -206,8 +206,8 @@ final class SettingsController {
 			),
 			'keep_backup'          => array(
 				'description' => __( 'Preserve original PNG files.', 'pluximo-image-optimizer' ),
-				'type'        => 'string',
-				'enum'        => array( '0', '1' ),
+				'type'        => 'integer',
+				'enum'        => array( 0, 1 ),
 			),
 			'backup_delete_timing' => array(
 				'description' => __( 'When backup files are removed.', 'pluximo-image-optimizer' ),
