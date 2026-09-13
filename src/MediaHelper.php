@@ -9,6 +9,8 @@ declare( strict_types=1 );
 
 namespace Pluximo\ImageOptimizer;
 
+use Pluximo\ImageOptimizer\Settings\SettingsRepository;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -81,7 +83,7 @@ class MediaHelper {
 	 * @return void
 	 */
 	public static function cleanup_or_backup_source( string $source_path, string $dest_path ): void {
-		if ( '1' === get_option( 'png2webp_keep_backup', '0' ) ) {
+		if ( '1' === SettingsRepository::instance()->get( 'keep_backup', '0' ) ) {
 			self::backup_original_png( $source_path );
 			return;
 		}
@@ -151,8 +153,8 @@ class MediaHelper {
 			return;
 		}
 
-		if ( 'cron' === get_option( 'png2webp_backup_delete_timing', 'immediate' ) ) {
-			wp_schedule_single_event( time() + MINUTE_IN_SECONDS, 'png2webp_delete_backup_files', array( $backup_files ) );
+		if ( 'cron' === SettingsRepository::instance()->get( 'backup_delete_timing', 'immediate' ) ) {
+			wp_schedule_single_event( time() + MINUTE_IN_SECONDS, 'pluximo_image_optimizer_delete_backup_files', array( $backup_files ) );
 			return;
 		}
 

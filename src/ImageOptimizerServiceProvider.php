@@ -15,7 +15,10 @@ use Pluximo\Foundation\Container;
 use Pluximo\Foundation\HookManager;
 use Pluximo\Foundation\PluginServiceProvider;
 use Pluximo\ImageOptimizer\Admin\AdminSettings;
-use Pluximo\ImageOptimizer\Admin\BulkConverter;
+use Pluximo\ImageOptimizer\Bulk\BulkConverter;
+use Pluximo\ImageOptimizer\Rest\BulkController;
+use Pluximo\ImageOptimizer\Rest\SettingsController;
+use Pluximo\ImageOptimizer\Settings\SettingsRepository;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -40,10 +43,23 @@ final class ImageOptimizerServiceProvider extends PluginServiceProvider {
 		$view = new View( dirname( __DIR__ ) . '/templates' );
 
 		$this->singleton(
+			SettingsRepository::class,
+			static fn(): SettingsRepository => SettingsRepository::instance()
+		);
+
+		$this->singleton(
+			SettingsController::class,
+			static fn( Container $c ): SettingsController => new SettingsController(
+				$c->get( SettingsRepository::class )
+			)
+		);
+
+		$this->singleton(
 			AdminSettings::class,
 			static fn( Container $c ): AdminSettings => new AdminSettings(
 				$view,
-				$c->get( AdminMenu::class )
+				$c->get( AdminMenu::class ),
+				$c->get( SettingsRepository::class )
 			)
 		);
 
@@ -53,8 +69,28 @@ final class ImageOptimizerServiceProvider extends PluginServiceProvider {
 		);
 
 		$this->singleton(
+			BulkController::class,
+			static fn( Container $c ): BulkController => new BulkController(
+				$c->get( BulkConverter::class )
+			)
+		);
+
+		$this->singleton(
 			UploadHandler::class,
 			static fn(): UploadHandler => new UploadHandler()
+		);
+
+		$this->action(
+			'rest_api_init',
+			static function () use ( $container ): void {
+				/** @var SettingsController $settings_controller */
+				$settings_controller = $container->get( SettingsController::class );
+				$settings_controller->register_routes();
+
+				/** @var BulkController $bulk_controller */
+				$bulk_controller = $container->get( BulkController::class );
+				$bulk_controller->register_routes();
+			}
 		);
 
 		$this->action(
@@ -72,33 +108,6 @@ final class ImageOptimizerServiceProvider extends PluginServiceProvider {
 				/** @var AdminSettings $settings */
 				$settings = $container->get( AdminSettings::class );
 				$settings->enqueue_admin_assets( $hook );
-			}
-		);
-
-		$this->action(
-			'admin_init',
-			static function () use ( $container ): void {
-				/** @var AdminSettings $settings */
-				$settings = $container->get( AdminSettings::class );
-				$settings->register_settings();
-			}
-		);
-
-		$this->action(
-			'wp_ajax_png2webp_bulk_scan',
-			static function () use ( $container ): void {
-				/** @var BulkConverter $bulk */
-				$bulk = $container->get( BulkConverter::class );
-				$bulk->ajax_bulk_scan();
-			}
-		);
-
-		$this->action(
-			'wp_ajax_png2webp_bulk_process_item',
-			static function () use ( $container ): void {
-				/** @var BulkConverter $bulk */
-				$bulk = $container->get( BulkConverter::class );
-				$bulk->ajax_bulk_process_item();
 			}
 		);
 
@@ -143,7 +152,7 @@ final class ImageOptimizerServiceProvider extends PluginServiceProvider {
 		);
 
 		$this->action(
-			'png2webp_convert_attachment',
+			'pluximo_image_optimizer_convert_attachment',
 			static function ( int $attachment_id ) use ( $container ): void {
 				/** @var UploadHandler $uploader */
 				$uploader = $container->get( UploadHandler::class );
@@ -157,7 +166,7 @@ final class ImageOptimizerServiceProvider extends PluginServiceProvider {
 		);
 
 		$this->action(
-			'png2webp_delete_backup_files',
+			'pluximo_image_optimizer_delete_backup_files',
 			array( MediaHelper::class, 'delete_backup_files' )
 		);
 	}

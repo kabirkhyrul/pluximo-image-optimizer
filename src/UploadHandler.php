@@ -9,6 +9,7 @@ declare( strict_types=1 );
 
 namespace Pluximo\ImageOptimizer;
 
+use Pluximo\ImageOptimizer\Settings\SettingsRepository;
 use Pluximo\Logging\Logger;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -28,7 +29,7 @@ class UploadHandler {
 	 * @return array
 	 */
 	public function filter_image_editor_output_format( array $formats ): array {
-		if ( '1' !== get_option( 'png2webp_auto_convert', '1' ) || 'immediate' !== $this->get_conversion_timing() ) {
+		if ( '1' !== SettingsRepository::instance()->get( 'auto_convert', '1' ) || 'immediate' !== $this->get_conversion_timing() ) {
 			return $formats;
 		}
 
@@ -69,7 +70,7 @@ class UploadHandler {
 	 * @return void
 	 */
 	public function schedule_attachment_conversion( int $attachment_id ): void {
-		if ( '1' !== get_option( 'png2webp_auto_convert', '1' ) || 'cron' !== $this->get_conversion_timing() ) {
+		if ( '1' !== SettingsRepository::instance()->get( 'auto_convert', '1' ) || 'cron' !== $this->get_conversion_timing() ) {
 			return;
 		}
 
@@ -79,8 +80,8 @@ class UploadHandler {
 		}
 
 		$args = array( $attachment_id );
-		if ( ! wp_next_scheduled( 'png2webp_convert_attachment', $args ) ) {
-			wp_schedule_single_event( time() + MINUTE_IN_SECONDS, 'png2webp_convert_attachment', $args );
+		if ( ! wp_next_scheduled( 'pluximo_image_optimizer_convert_attachment', $args ) ) {
+			wp_schedule_single_event( time() + MINUTE_IN_SECONDS, 'pluximo_image_optimizer_convert_attachment', $args );
 		}
 	}
 
@@ -92,7 +93,7 @@ class UploadHandler {
 	 * @return void
 	 */
 	public function convert_scheduled_attachment( int $attachment_id ): void {
-		if ( '1' !== get_option( 'png2webp_auto_convert', '1' ) ) {
+		if ( '1' !== SettingsRepository::instance()->get( 'auto_convert', '1' ) ) {
 			return;
 		}
 
@@ -151,7 +152,7 @@ class UploadHandler {
 	 * @return bool
 	 */
 	private function should_convert_upload( array $upload ): bool {
-		if ( '1' !== get_option( 'png2webp_auto_convert', '1' ) ) {
+		if ( '1' !== SettingsRepository::instance()->get( 'auto_convert', '1' ) ) {
 			return false;
 		}
 
@@ -187,7 +188,7 @@ class UploadHandler {
 	 * @return string
 	 */
 	private function get_target_format(): string {
-		$format = strtolower( (string) get_option( 'png2webp_output_format', 'auto' ) );
+		$format = strtolower( (string) SettingsRepository::instance()->get( 'output_format', 'auto' ) );
 
 		if ( 'auto' === $format ) {
 			return ConverterEngine::is_avif_supported() ? 'avif' : 'webp';
@@ -206,7 +207,7 @@ class UploadHandler {
 	 * @return string
 	 */
 	private function get_conversion_timing(): string {
-		return 'cron' === get_option( 'png2webp_conversion_timing', 'immediate' ) ? 'cron' : 'immediate';
+		return 'cron' === SettingsRepository::instance()->get( 'conversion_timing', 'immediate' ) ? 'cron' : 'immediate';
 	}
 
 	/**
@@ -218,11 +219,11 @@ class UploadHandler {
 	 */
 	private function record_conversion_stats( array $result ): void {
 		$saved_bytes = (int) ( $result['saved_bytes'] ?? 0 );
-		$total_saved = (int) get_option( 'png2webp_total_saved_bytes', 0 );
-		$total_count = (int) get_option( 'png2webp_total_converted_count', 0 );
+		$total_saved = (int) get_option( SettingsRepository::TOTAL_SAVED_OPTION, 0 );
+		$total_count = (int) get_option( SettingsRepository::TOTAL_COUNT_OPTION, 0 );
 
-		update_option( 'png2webp_total_saved_bytes', $total_saved + $saved_bytes );
-		update_option( 'png2webp_total_converted_count', $total_count + 1 );
+		update_option( SettingsRepository::TOTAL_SAVED_OPTION, $total_saved + $saved_bytes );
+		update_option( SettingsRepository::TOTAL_COUNT_OPTION, $total_count + 1 );
 
 		$logger = new Logger();
 		$logger->log( sprintf( 'Upload conversion completed - Saved %s', size_format( $saved_bytes, 2 ) ), 'info' );

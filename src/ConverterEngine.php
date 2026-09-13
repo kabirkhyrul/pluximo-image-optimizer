@@ -9,6 +9,8 @@ declare( strict_types=1 );
 
 namespace Pluximo\ImageOptimizer;
 
+use Pluximo\ImageOptimizer\Settings\SettingsRepository;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -75,9 +77,10 @@ class ConverterEngine {
 			);
 		}
 
-		$format      = strtolower( (string) ( $target_format ?? get_option( 'png2webp_output_format', 'webp' ) ) );
+		$settings    = SettingsRepository::instance();
+		$format      = strtolower( (string) ( $target_format ?? $settings->get( 'output_format', 'webp' ) ) );
 		$format      = 'avif' === $format ? 'avif' : 'webp';
-		$quality_int = (int) ( $quality ?? get_option( 'png2webp_quality', 82 ) );
+		$quality_int = (int) ( $quality ?? $settings->get( 'quality', 82 ) );
 		$quality_val = max( 1, min( 100, $quality_int ) );
 		$dest_path ??= (string) preg_replace( '/\.png$/i', '.' . $format, $source_path );
 

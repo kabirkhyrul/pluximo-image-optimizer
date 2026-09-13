@@ -21,28 +21,12 @@ require_once __DIR__ . '/autoload.php';
 require_once __DIR__ . '/constants.php';
 
 use Pluximo\ImageOptimizer\Plugin;
+use Pluximo\ImageOptimizer\Settings\SettingsRepository;
 
 register_activation_hook(
 	__FILE__,
 	static function (): void {
-		if ( false === get_option( 'png2webp_auto_convert' ) ) {
-			update_option( 'png2webp_auto_convert', '1' );
-		}
-		if ( false === get_option( 'png2webp_conversion_timing' ) ) {
-			update_option( 'png2webp_conversion_timing', 'immediate' );
-		}
-		if ( false === get_option( 'png2webp_output_format' ) ) {
-			update_option( 'png2webp_output_format', 'auto' );
-		}
-		if ( false === get_option( 'png2webp_quality' ) ) {
-			update_option( 'png2webp_quality', 82 );
-		}
-		if ( false === get_option( 'png2webp_keep_backup' ) ) {
-			update_option( 'png2webp_keep_backup', '1' );
-		}
-		if ( false === get_option( 'png2webp_backup_delete_timing' ) ) {
-			update_option( 'png2webp_backup_delete_timing', 'immediate' );
-		}
+		SettingsRepository::instance()->install();
 	}
 );
 
