@@ -1,28 +1,35 @@
-# Repository Guidelines
+# Repository Guidelines for Pluximo Shared Modules
 
 ## Project Structure & Module Organization
 
-This directory contains reusable modules for the Pluximo Support Tickets WordPress plugin. Each module keeps PHP classes in `src/` under its matching `Pluximo\...` namespace:
+This directory contains reusable, composable architecture modules for Pluximo WordPress plugins. Each module is maintained as an independent git repository/submodule and defines classes in `src/` under its matching `Pluximo\...` namespace:
 
-- `foundation/`: container, hooks, product registry, and shared contracts.
-- `admin-shell/`: WordPress admin menu, page registration, and template rendering view engine.
-- `ecosystem/`: product catalogue, API clients, showcase templates, CSS, and JavaScript.
-- `support/`: support form, validation, diagnostics, transport, REST, and AJAX handling.
+- `foundation/`: Core runtime kernel, DI container, hook aggregator, product registry, and shared contracts (`Pluximo\Foundation`).
+- `admin-shell/`: Shared WordPress admin menu, subpage registration, and path-safe template rendering (`Pluximo\AdminShell`).
+- `ecosystem/`: Product catalogue, remote clients (WP.org, Pro API), showcase templates, and companion installer (`Pluximo\Ecosystem`).
+- `support/`: Centralized support ticketing, system diagnostics collector, transport layer, and GDPR consent handling (`Pluximo\Support`).
+- `asset-manager/`: Shared React component library, Tailwind CSS design system with `plx:` prefix, and Vite multi-entry build system.
 
-The parent plugin entry point is `../plugin.php`; `../autoload.php` maps module namespaces. Module directories are Git submodules, so commit module changes in their own repositories as well as updating pointers here.
+The parent plugin entry point is `../pluximo-image-optimizer.php`; `../autoload.php` maps module namespaces. Module directories are Git submodules, so commit module changes in their own repositories as well as updating pointers here.
 
 ## Build, Test, and Development Commands
 
-There is no compiled build step or dependency manifest. From the plugin root, use:
-
 ```sh
+# Initialize all submodules
 git submodule update --init --recursive
+
+# Syntax-check PHP across modules and plugin source
 find modules src -name '*.php' -print0 | xargs -0 -n1 php -l
-wp plugin activate pluximo-plugin
+
+# Activate plugin via WP-CLI
+wp plugin activate pluximo-image-optimizer
 ```
 
-The first command initializes modules, the second syntax-checks PHP, and the third activates the plugin in the configured local WordPress installation. After changes, exercise the relevant wp-admin page and REST/AJAX flow with `WP_DEBUG` enabled.
+## Architectural Guidelines & Anti-Patterns (Golden Rules)
 
-## Coding Style & Naming Conventions
-
-Target PHP 7.4+ and WordPress 6.0+. Follow the existing WordPress PHP style: tabs for indentation, spaces inside control-structure parentheses, strict types, docblocks, and escaped/sanitized external data. Use PascalCase class names and files (`SupportManager.php`), snake_case WordPress callbacks, and lowercase hyphenated asset names. Keep namespaces aligned with `../autoload.php`. JavaScript uses tabs, single quotes, and semicolons; CSS selectors use the `pluximo-` prefix.
+1. **Never write custom singletons (`getInstance()`).** Always register services into the Foundation `Container` via `PluginServiceProvider`.
+2. **Never call `add_action()` / `add_filter()` across random files.** Route all hooks through `HookManager`.
+3. **Never call `add_menu_page()` directly.** Always register submenus under the shared `pluximo` menu using `AdminMenu::register_subpage()`.
+4. **Never use raw `include` or `require` in page callbacks.** Use `View::output()` to enforce path-traversal protection and output-buffering safety.
+5. **Never use unprefixed Tailwind classes in shared React components.** Always use the `plx:` prefix to prevent style pollution in `wp-admin`.
+6. **Never access raw `$_GET` or `$_POST` directly.** Use Foundation's `Request` object which guarantees nonce verification.
